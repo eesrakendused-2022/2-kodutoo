@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Rock Paper Scissor Game</title>
+    <!--Fontawesome-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <!--Google Font-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="RPS.css">
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="scores">
+            <p>Computer : 
+                <span id="computer_score">0</span>
+            </p>
+            <p>
+                You :
+                <span id="user_score">0</span>
+            </p>
+        </div>
+        <div class="Ro_Pa_Sc">
+            <button onclick="checker('rock')">
+                <!--https://fontawesome.com/v5/icons/hand-rock?s=solid-->
+                <i class="far fa-hand-rock"></i>
+            </button>
+            <button onclick="checker('paper')">
+                <!--https://fontawesome.com/v4/icon/hand-paper-o -->
+                <i class="far fa-hand-paper"></i>
+            </button>
+            <button onclick="checker('scissor')">
+                <!--https://fontawesome.com/v5/icons/hand-scissors?s=solid-->
+                <i class="far fa-hand-scissors"></i>
+            </button>
+        </div>
+        <div class="details">
+            <p id="user_choice"></p>
+            <p id="comp_choice"></p>
+            <p id="result"></p>
+        </div>
+    </div>
+
+    <a href="https://github.com/kkriiska/kodutoo2">Link repositooriumile</a>
+    
+    <!--https://bobbyhadz.com/blog/javascript-cannot-read-property-style-of-null-->
+    <script src="RPS.js"></script>
+</body>
