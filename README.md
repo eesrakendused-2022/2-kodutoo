@@ -1,28 +1,23 @@
-# 2-kodutoo
 
-2. kodutöö Eesrakenduste arendamises.
+# Kodutöö nr 2
 
-## Tähtaeg 07.05.2022 23:59
+Kodutöö aine "Eesrakeduste arendamine" jaoks.
 
-Kujunda ja loo ise lihtne mäng. 
+Kodutöö eesmärgiks kujundada ja ise luua mäng.
 
-## Nõuded
+## Funktsionaalsus
 
-1. Mäng töötab.
-1. Mäng on tehtud jQuery-ga. 
-1. Mäng on objektorienteeritud (klassides) ja kasutatud on AJAX-it. 
-1. Mäng on originaalne ning kasutajaliides on maitsekalt kujundatud kasutades CSS-i - peab olema ise kirjutatud. 
-1. Autori ees- ja perenimi on lehel välja toodud
-1. Lehel on viide rakenduse repositooriumile
-1. `README.md` failis on välja toodud autori nimi, ekraanipilt rakendusest ja kirjeldatud funktsionaalsus
-1. Kui kasutatud on koodi mujalt, siis sellel on viidatud. 
+* Mängija saab arvutiga mängida mängu kivi-paber-käärid
+* Peale oma valiku tegemist kuvatakse arvuti valik
+* Kui valikud on kuvatud antakse mängijale teada, kas ta on võitnud, kaotanud või mäng lõppes viigiga
+* Kui mäng võidetakse lisatakse mängijale 1 punkt skoorile, kui kaotatakse, siis saab punkti arvuti. Viigi puhul ei saa keegi punkti
 
-## Mõned ideed (lihtsalt, et mõte hakkaks jooksma)
 
-* Ussimäng
-* Cookie clicker
-* Erinevad arvutamismängud
-* 2048
-**
+## Pilt tööst
 
-Võimalik saada - 15 punkti
+![Screenshot (31)](https://user-images.githubusercontent.com/22071408/165399465-b22a7589-9eee-43ed-b04a-ade5f41b9fde.png)
+
+
+## Autor
+Karolin Kriiska  
+[Link](http://localhost:5555/~karokrii/EesRak2022/kivi_paber_kaarid_Kriiska/RPS.html) tööle
