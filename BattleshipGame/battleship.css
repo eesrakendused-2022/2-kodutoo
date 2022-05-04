@@ -1,0 +1,85 @@
+body {
+    background-color: #6dacf3;
+    font-family: Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+main {
+    margin: 20px;
+    padding: 10px;
+    width: 80%;
+}
+
+h2 {
+    text-align: center;
+}
+
+details {
+    font-weight: 600;
+    background-color: #88baf3;
+}
+
+#Desc {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    max-width: 200px;
+    justify-content: space-around;
+}
+
+#info, #results {
+    background-color: #9dc7f8;
+    padding: 20px;
+    text-align: center;
+}
+
+#info>img {
+    width: 600px;
+    height: 300px;
+}
+
+#UI {
+    background-color: rgb(165, 206, 241);
+    text-align: center;
+    font-size: 20px;
+}
+
+#gameArea {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+#playField {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+table, th, td {
+    border: 2px solid black;
+    text-align: center;
+}
+
+th, td {
+    width: 50px;
+    height: 50px;
+}
+
+th {
+    background-color: rgb(43, 43, 255);
+}
+
+.ship {
+    background-color: blue;
+}
+
+.hit {
+    background-color: green;
+}
+
+.miss {
+    background-color: red;
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="battleship.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="battleship.js" defer></script>
+    <title>Battleship</title>
+</head>
+<body>
+    <header>
+        <details id="instructions">
+            <summary>Mängu juhised</summary>
+            <p>Tegemist on laevade pommitamise mängu lihtsustatud variandiga. Mängulaual on kaks tabelit, vastase ja mängija oma.</p>
+            <p>Tabelite all paikneb infoväli, kus kuvatakse mängu staatust, käikude arvu, ning allesolevate laevade arvu.</p>
+            <p>Mängu eesmärk: Pommitada maha kõik vastase laevad</p>
+            <p>Mängu käik:</p>
+            <ol type="1">
+                <li>Paiguta oma laevad, klikkides oma tabelis olevatele soovitud lahtritele</li>
+                <li>Peale laevade paigutamist mäng algab esimese käiguga. Kliki vastase tabelis lahtrile, mida soovid pommitada.</li>
+                <li>Kui sinul või vastasel saavad laevad otsa, on mäng läbi. Tulemus kuvatakse infoväljas.</li>
+            </ol>
+            <div id="Desc">
+                <div id="elements">
+                    <p id="red" class="miss">Punane</p>
+                    <p id="blue" class="ship">Sinine</p>
+                    <p id="green" class="hit">Roheline</p>
+                </div>
+                <div id="descriptions">
+                    <p id="redDesc">Möödas</p>
+                    <p id="blueDesc">Sinu laev</p>
+                    <p id="greenDesc">Pihtas</p>
+                </div>
+            </div>
+        </details>
+    </header>
+    <main>
+        <div id="info">
+            <h1>Christian-Enrique Hindremäe mäng</h1>
+            <p><a href="https://github.com/CrimsonTLU/2-kodutoo">Github repositoorium</a></p>
+            <img src="Yamato-color.jpg" alt="Yamato">
+        </div>
+        <div id="gameArea">
+            <div id="playField">
+                <div id="fieldPC">
+                    <table id="CPU">
+                        <tr>
+                            <th> </th>
+                            <th>1</th>
+                            <th>2</th>
+                            <th>3</th>
+                            <th>4</th>
+                            <th>5</th>
+                        </tr>
+                        <tr>
+                            <th>A</th>
+                            <td id="11C"></td>
+                            <td id="12C"></td>
+                            <td id="13C"></td>
+                            <td id="14C"></td>
+                            <td id="15C"></td>
+                        </tr>
+                        <tr>
+                            <th>B</th>
+                            <td id="21C"></td>
+                            <td id="22C"></td>
+                            <td id="23C"></td>
+                            <td id="24C"></td>
+                            <td id="25C"></td>
+                        </tr>
+                        <tr>
+                            <th>C</th>
+                            <td id="31C"></td>
+                            <td id="32C"></td>
+                            <td id="33C"></td>
+                            <td id="34C"></td>
+                            <td id="35C"></td>
+                        </tr>
+                        <tr>
+                            <th>D</th>
+                            <td id="41C"></td>
+                            <td id="42C"></td>
+                            <td id="43C"></td>
+                            <td id="44C"></td>
+                            <td id="45C"></td>
+                        </tr>
+                        <tr>
+                            <th>E</th>
+                            <td id="51C"></td>
+                            <td id="52C"></td>
+                            <td id="53C"></td>
+                            <td id="54C"></td>
+                            <td id="55C"></td>
+                        </tr>
+                    </table>
+                    <h2>Vastane</h2>
+                </div>
+                <div id="fieldPlayer">
+                    <table id="Player">
+                        <tr>
+                            <th> </th>
+                            <th>1</th>
+                            <th>2</th>
+                            <th>3</th>
+                            <th>4</th>
+                            <th>5</th>
+                        </tr>
+                        <tr>
+                            <th>A</th>
+                            <td id="11P"></td>
+                            <td id="12P"></td>
+                            <td id="13P"></td>
+                            <td id="14P"></td>
+                            <td id="15P"></td>
+                        </tr>
+                        <tr>
+                            <th>B</th>
+                            <td id="21P"></td>
+                            <td id="22P"></td>
+                            <td id="23P"></td>
+                            <td id="24P"></td>
+                            <td id="25P"></td>
+                        </tr>
+                        <tr>
+                            <th>C</th>
+                            <td id="31P"></td>
+                            <td id="32P"></td>
+                            <td id="33P"></td>
+                            <td id="34P"></td>
+                            <td id="35P"></td>
+                        </tr>
+                        <tr>
+                            <th>D</th>
+                            <td id="41P"></td>
+                            <td id="42P"></td>
+                            <td id="43P"></td>
+                            <td id="44P"></td>
+                            <td id="45P"></td>
+                        </tr>
+                        <tr>
+                            <th>E</th>
+                            <td id="51P"></td>
+                            <td id="52P"></td>
+                            <td id="53P"></td>
+                            <td id="54P"></td>
+                            <td id="55P"></td>
+                        </tr>
+                    </table>
+                    <h2>Sina</h2>
+                </div>
+            </div>
+            <div id="UI">
+                <p id="status">Paiguta laevad</p>
+                <p id="turn">Käik: 0</p>
+                <p id="enemyShips">Vastase laevu: </p>
+                <p id="yourShips">Sinu laevu: </p>
+            </div>
+            <div id="results">
+                <p>Tulemused: </p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
