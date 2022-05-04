@@ -8,10 +8,7 @@ class Battleship {
         this.opponentShips = 5;
         this.enemyShips = [];
         this.ownShips = [];
-        this.shotsFired = 0;
         this.attacks = [];
-        this.hits = 0;
-        this.misses = 0;
         this.turn = 0;
         this.gameStatus = "preparation";
         this.winner = "";
