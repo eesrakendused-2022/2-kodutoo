@@ -1,12 +1,17 @@
 # 2-kodutoo
 
-2. kodutöö Eesrakenduste arendamises.
+## Autor: Taavi Kamarik
 
 ## Tähtaeg 07.05.2022 23:59
 
-Kujunda ja loo ise lihtne mäng. 
+## Minesweeper
 
-## Nõuded
+Koostasin Minesweeperi mängu, milles on võimalik validfa raskustaset ning võimalik salvestada tulemused andmebaasi. Anmbeaasis olevate tulemuste edetabel kuvatakse ekraanile.
+
+Koostasin mängu videojuhendi abil ning muutsin koodis mõned kohad, et see endale sobilikumaks teha.
+
+![Kodutöö2 pilt](/relative/path/to/img.jpg?raw=true "Kodutöö 2")
+
 
 1. Mäng töötab.
 1. Mäng on tehtud jQuery-ga. 
@@ -16,13 +21,3 @@ Kujunda ja loo ise lihtne mäng.
 1. Lehel on viide rakenduse repositooriumile
 1. `README.md` failis on välja toodud autori nimi, ekraanipilt rakendusest ja kirjeldatud funktsionaalsus
 1. Kui kasutatud on koodi mujalt, siis sellel on viidatud. 
-
-## Mõned ideed (lihtsalt, et mõte hakkaks jooksma)
-
-* Ussimäng
-* Cookie clicker
-* Erinevad arvutamismängud
-* 2048
-**
-
-Võimalik saada - 25 punkti
