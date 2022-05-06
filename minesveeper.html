@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="minesweeper.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <title>Taavi Kamarik</title>
+</head>
+<body>
+    <div id="name" class="name">
+        <div class="repo">
+            Autor: Taavi Kamarik
+            <br>
+            Repositooriumi <a href="https://github.com/TaaviKamarik/2-kodutoo">link</a>
+        </div>
+        <div class="nameInside">
+            <label for="nameValue">Palun sisesta oma nimi</label>
+            <br>
+            <input type="text" id="nameValue">
+            <div class="gameLevel">
+                <label for="gameLevel" class="gameLevel">Vali raskustase</label>
+            </div>
+            <div class="radio">
+                <div>
+                    <input type="radio" id="easy" name="level" value="easy">
+                    <label for="easy">Kerge raskustase</label><br>
+                </div>
+                <div>
+                    <input type="radio" id="medium" name="level" value="medium">
+                    <label for="medium">Keskmine raskustase</label><br>  
+                </div>
+                <div>
+                    <input type="radio" id="hard" name="level" value="hard">
+                    <label for="hard">Raske raskustase</label><br><br>
+                </div>
+            </div>
+            
+    
+            <input type="button" value="Mängi" id="submitLevel">
+        </div>
+        
+    </div>
+
+    <div id="winScreen" class="hiddenUI">
+        <h1>Võitsid mängu</h1>
+        <div id="score">
+            <h3>Sinu ajaks oli </h3>
+        </div>
+        
+        <br>
+        <br>
+        <H1>TOP 10</H1>
+        <div id="results"></div>
+
+        <div>
+            <input type="button" value="Mängi uuesti" id="submitReplay">
+            <input type="button" value="Vali raskustase" id="submitLevelChange">
+        </div>
+
+    </div>
+
+    <div id="loseScreen" class="hiddenUI">
+
+        <div class="loseCenter">
+            <h1>Kaotasid mängu</h1>
+            <div>
+                <input type="button" value="Mängi uuesti" id="submitReplayLose">
+                <input type="button" value="Vali raskustase" id="submitLevelChangeLose">
+            </div>
+    
+        </div>
+
+
+
+    </div>
+
+
+    <h2>Minesweeper</h2>
+    <div id="grid"></div>
+</body>
+</html>

@@ -1,0 +1,166 @@
+*{
+    font-family: Arial, sans-serif;
+}
+
+body{
+    text-align: center;
+}
+
+
+
+#grid {
+    border: 1px solid darkslategray;
+    display: inline-block;
+}
+
+.row{
+    font-size: 0px;
+}
+
+
+
+.col{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: whitesmoke;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    vertical-align: top;
+    color: black;
+    font-size: 20px;
+    line-height: 50px;
+
+}
+body{
+    background-color: #0077b6;
+}
+
+
+.name{
+    position: absolute;
+    width: 100vw;
+    height: 100vH;
+    background-color: #0077b6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nameInside{
+    width: 25vw;
+    background-color: #0077b6;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+    border-radius: 20px;
+    
+}
+
+input[type=button]{
+    background-color: #90e0ef;
+    border: none;
+    width: 140px;
+    height: 30px;
+    border-radius: 20px;
+    font-size: 18px;
+    color: #03045e;
+
+}
+
+
+input[type=button]:hover{
+    cursor: pointer;
+}
+
+.radio{
+    flex: start;
+    align-items: left;
+}
+
+#name label{
+    color: white;
+}
+
+.col.hidden{
+    background-color: #90e0ef;
+    cursor: pointer;
+}
+
+.col.hidden:hover{
+    background-color: #caf0f8;
+}
+
+.row:last-child .col{
+    border-bottom: none;
+}
+
+.row .col:last-child{
+    border-right: none;
+}
+/* 
+.col.hidden.mine{
+    background-color: red;
+}
+ */
+#nameValue{
+    width: 50%;
+    height: 15%;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 20px;
+    
+}
+
+.gameLevel{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+
+.hiddenUI{ 
+    position: absolute;
+    width: 100vw;
+    height: 100vH;
+    background-color: #0077b6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.loseCenter{
+    width: 25vw;
+    background-color: #0077b6;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+    border-radius: 20px;
+}
+    
+
+
+.hiddenUI h1{ 
+    color: white !important; 
+    
+}
+
+.hiddenUI h3{ 
+    color: white !important; 
+}
+
+div.hiddenUI{
+    display: none;
+}
+
+#results{
+    color: white;
+}
+
+.repo{
+    background-color: white;
+    padding: 10px;
+}
