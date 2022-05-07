@@ -1,6 +1,5 @@
 $(function () {
 
-    //saving dom objects to variables
     var container = $('#container');
     var bird = $('#bird');
     var pole = $('.pole');
@@ -10,7 +9,7 @@ $(function () {
     var speed_span = $('#speed');
     var restart = $('#restart');
 
-    //saving some initial setup
+    
     var container_width = parseInt(container.width());
     var container_height = parseInt(container.height());
     var pole_initial_position = parseInt(pole.css('right'));
@@ -19,7 +18,7 @@ $(function () {
     var bird_height = parseInt(bird.height());
     var speed = 10;
 
-    //some other declarations
+   
     var go_up = false;
     var score_updated = false;
     var game_over = false;
@@ -35,7 +34,7 @@ $(function () {
 
             var pole_current_position = parseInt(pole.css('right'));
 
-            //update the score when the poles have passed the bird successfully
+            //uuendan skoori kui lind on sammastest läbi läinud
             if(pole_current_position > container_width - bird_left){
                 if(score_updated === false){
                     score.text(parseInt(score.text())+1);
@@ -44,15 +43,15 @@ $(function () {
                 
             }
 
-            //check whether the poles went out of the container
+            
             if (pole_current_position > container_width) {
                 var new_height = parseInt(Math.random() * 100);
 
-                //change the pole's height
+                //muuda samba kõrgust
                 pole1.css('height', pole_initial_height + new_height);
                 pole2.css('height', pole_initial_height - new_height);
 
-                //increase speed
+                //suurenda kiirust
                 speed = speed + 1;
                 speed_span.text(speed);
 
@@ -61,7 +60,7 @@ $(function () {
                 pole_current_position = pole_initial_position;
             }
 
-            //move the poles
+            //pane sambad liikuma
             pole.css('right', pole_current_position + speed);
 
             if (go_up === false) {
