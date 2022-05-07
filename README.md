@@ -1,9 +1,4 @@
 # 2-kodutoo
-
-
-## Nõuded
-3. `README.md` failis on välja toodud autori nimi, ekraanipilt rakendusest ja kirjeldatud funktsionaalsus
-
 ###Siim Kriibi
 
 Mäng on paroodia kuulasts mängust Jump King. Mängus saab ainult hüpata "spawnis". Päris mängus kohtud mängu "spawniga" koruvalt nong jääd nö "bog"-i kinni (https://youtu.be/ZvMP6FNsRL4?t=709).
