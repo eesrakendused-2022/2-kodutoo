@@ -1,28 +1,7 @@
-# 2-kodutoo
-
-2. kodutöö Eesrakenduste arendamises.
-
-## Tähtaeg 07.05.2022 23:59
-
-Kujunda ja loo ise lihtne mäng. 
-
-## Nõuded
-
-1. Mäng töötab.
-1. Mäng on tehtud jQuery-ga. 
-1. Mäng on objektorienteeritud (klassides) ja kasutatud on AJAX-it. 
-1. Mäng on originaalne ning kasutajaliides on maitsekalt kujundatud kasutades CSS-i - peab olema ise kirjutatud. 
-1. Autori ees- ja perenimi on lehel välja toodud
-1. Lehel on viide rakenduse repositooriumile
 1. `README.md` failis on välja toodud autori nimi, ekraanipilt rakendusest ja kirjeldatud funktsionaalsus
-1. Kui kasutatud on koodi mujalt, siis sellel on viidatud. 
+Martin Lukas Kodutöö 2 Tehtud
+![gameCapture](https://user-images.githubusercontent.com/90237322/167262168-a65657e8-4e77-45c0-9149-86cbd613c8f5.PNG)
 
-## Mõned ideed (lihtsalt, et mõte hakkaks jooksma)
+Tegin päris lihtsa arvu arvamise mängu, mis genereerib juhuslikku arvu ja pakub mängijale arvamiseks. Kui arv on arvatud, näeb mängija kui kiirelt on ta arvu arvanud ja mis koht tal leaderbordsis on. Mäng salvestab tulemusi nii localstoragise, kui ka tekstifaili.
 
-* Ussimäng
-* Cookie clicker
-* Erinevad arvutamismängud
-* 2048
-**
-
-Võimalik saada - 25 punkti
+Olen enamasti koodi ise kirjutanud või kasutasin mõningat juppi koodi Typer mängu koodist
