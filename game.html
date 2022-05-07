@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CanvasTest</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="classes/database.js" type="module"></script>
+    <script src="classes/canvasClass.js"></script>
+    <script src="classes/settingsClass.js"></script>
+    <script src="gameScript.js" defer></script>
+    <link rel="stylesheet" href="gameStyle.css">
+</head>
+<body>
+    <div id="score">0</div>
+    <div id="canvasContainer">
+        <canvas id="gameCanvas"></canvas>
+    </div>
+    <div id="controls">
+        <button id="startGame">Start game</button>
+        <button id="scores">Scoreboard</button>
+        <button id="settings">About & settings</button>
+        <a href="https://github.com/taavippp/2-kodutoo" target="_blank"><button id="git">GitHub</button></a>
+    </div>
+    <div id="settingsContainer">
+        <button id="closeSettings">X</button>
+        <p id="creatorText">Creator: Taavi Pahk</p>
+        <p id="helpText">
+            In this untitled game a ball spawns at the top of the canvas and is falling down. <br>
+            Your goal is to guide it to the "win zone", which is a small light green rectangle at the bottom of the canvas. <br>
+            You do this by clicking and dragging your mouse to draw a line on the canvas. <br>
+            Warning: the collision may be wonky!
+        </p>
+        <div id="inputs">
+            <label for="name">Name</label>
+            <input type="text" id="name">
+            <label for="hardmode">Faster ball?</label>
+            <input type="checkbox" name="hardmode" id="hardmode">
+            <label id="fpsCounter" for="fps"></label>
+            <input type="range" name="fps" id="fps" min="10" max="90" step="10" value="60">
+        </div>
+    </div>
+    <div id="scoreContainer">
+        <button id="closeScores">X</button>
+        <h2>Scores</h2>
+        <h3 id="gamemode"></h3>
+        <div id="scoreboard"></div>
+    </div>
+</body>
+</html>
