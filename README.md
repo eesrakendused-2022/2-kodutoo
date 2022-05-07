@@ -2,27 +2,28 @@
 
 2. kodutöö Eesrakenduste arendamises.
 
-## Tähtaeg 07.05.2022 23:59
+## Kuvatõmmised
 
-Kujunda ja loo ise lihtne mäng. 
+# Mäng
 
-## Nõuded
+![image](https://user-images.githubusercontent.com/90237383/167270638-0fbe8251-b913-4a2f-b987-f46bae6dd777.png)
 
-1. Mäng töötab.
-1. Mäng on tehtud jQuery-ga. 
-1. Mäng on objektorienteeritud (klassides) ja kasutatud on AJAX-it. 
-1. Mäng on originaalne ning kasutajaliides on maitsekalt kujundatud kasutades CSS-i - peab olema ise kirjutatud. 
-1. Autori ees- ja perenimi on lehel välja toodud
-1. Lehel on viide rakenduse repositooriumile
-1. `README.md` failis on välja toodud autori nimi, ekraanipilt rakendusest ja kirjeldatud funktsionaalsus
-1. Kui kasutatud on koodi mujalt, siis sellel on viidatud. 
+# Õpetus
 
-## Mõned ideed (lihtsalt, et mõte hakkaks jooksma)
+![image](https://user-images.githubusercontent.com/90237383/167270665-ae8c80d5-b7bf-4423-a749-907c55d25f7f.png)
 
-* Ussimäng
-* Cookie clicker
-* Erinevad arvutamismängud
-* 2048
-**
+# Näited
 
-Võimalik saada - 25 punkti
+![image](https://user-images.githubusercontent.com/90237383/167270688-cdf12036-5cfd-4a38-af56-4023e7d5d0fd.png)
+
+## Kirjeldus
+
+Mängu sisenedes tuleb ette mängu tutvustav selgitus. Vajutades nupule "Mängi", tuleb ette mäng. Mängu saab mängida oma klaviatuuril erinevaid viietähelisi sõnu kirjutades. Vajutades klaviatuuril tähele, läheb see vabasse ruutu, kuniks kõik selle rea ruudud kinni on (siis peaks olema välja kirjutatud ka sõna). Tähti on võimalik ka kustutada. Kui viietäheline sõna on sisestatud ja vajutatud ENTER, muudavad ruudud värvi, et näidata, millised tähed on õigesti pakutud. Sõna, mida tuleb ära arvata, valitakse suvaliselt mängu alguses. See ei sisalda õ, ä, ö, ü, š ega ž tähte. Lehe ülaservas on "I" täheline nupp, millele vajutades ilmub ekraanile täpsem selgitus mängust. Kasutasin mängu koostamisel tunnis tehtud näiteid, kujundusel tuli abiks hoopis trips-traps-trulli programmeerimist õpetav video (link https://www.youtube.com/watch?v=AnmwHjpEhtA&t=970s). Mängu inspiratsiooniks on Wordle (link https://www.nytimes.com/games/wordle/index.html).
+
+## Link
+
+http://www.tlu.ee/~raulito/mang/sonamang.html
+
+## Autor
+
+Raul Raudsepp
