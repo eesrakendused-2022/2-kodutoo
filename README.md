@@ -26,16 +26,16 @@ http://greeny.cs.tlu.ee/~kripol/frontend/jQueryGame/
 # Pildid mängust
 
 Pilt coverist, mis on välja toodud mängu nimi, väike sissejuhatus ja võimalus sisestada mängijate nimed
-![lahe pilt](jQueryGame/front.png)
+![lahe pilt](jQueryGame/pictures/front.png)
 
 Pilt mängust endast.
-![lahe pilt](jQueryGame/mainGame.png)
+![lahe pilt](jQueryGame/pictures/mainGame.png)
 
 Pilt lipu liikumisest laual
-![lahe pilt](jQueryGame/queenMovement.png)
+![lahe pilt](jQueryGame/pictures/queenMovement.png)
 
 Pilt, kus valge võitis.
-![lahe pilt](jQueryGame/whiteWin.png)
+![lahe pilt](jQueryGame/pictures/whiteWin.png)
 
 Pilt autori nimest ja lingist gitHub reposse(click on logo)
-![lahe pilt](jQueryGame/Screenshot_1.png)
+![lahe pilt](jQueryGame/pictures/Screenshot_1.png)
