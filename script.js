@@ -47,31 +47,31 @@ class Clicker {
             $("#buySupernova").prop('disabled', false);
         }
 
-        if (this.clickScore < 50 || this.cosmicCount == 1) {
+        if (this.clickScore < 100 || this.cosmicCount == 1) {
             $("#buyCosmic").prop('disabled', true);
         } else {
             $("#buyCosmic").prop('disabled', false);
         }
 
-        if (this.clickScore < 75 || this.celestialCount == 3) {
+        if (this.clickScore < 200 || this.celestialCount == 3) {
             $("#buyCelestial").prop('disabled', true);
         } else {
             $("#buyCelestial").prop('disabled', false);
         }
 
-        if (this.clickScore < 100 || this.universeCount == 1) {
+        if (this.clickScore < 500 || this.universeCount == 1) {
             $("#buyUniverse").prop('disabled', true);
         } else {
             $("#buyUniverse").prop('disabled', false);
         }
 
-        if (this.clickScore < 150 || this.samsungCount == 3) {
+        if (this.clickScore < 1000 || this.samsungCount == 3) {
             $("#buySamsung").prop('disabled', true);
         } else {
             $("#buySamsung").prop('disabled', false);
         }
 
-        if (this.clickScore < 250 || this.neilCount == 1) {
+        if (this.clickScore < 2500 || this.neilCount == 1) {
             $("#buyNeil").prop('disabled', true);
         } else {
             $("#buyNeil").prop('disabled', false);
@@ -93,7 +93,7 @@ class Clicker {
         });
 
         $("#buyCosmic").click(()=> {
-            this.clickScore = this.clickScore - 50;
+            this.clickScore = this.clickScore - 100;
             console.log("minus 50");
             $("#score").html(this.clickScore);
             this.cosmicCount++;
@@ -106,7 +106,7 @@ class Clicker {
         });
 
         $("#buyCelestial").click(()=> {
-            this.clickScore = this.clickScore - 75;
+            this.clickScore = this.clickScore - 200;
             console.log("minus 75");
             $("#score").html(this.clickScore);
             this.celestialCount++;
@@ -119,7 +119,7 @@ class Clicker {
         });
 
         $("#buyUniverse").click(()=> {
-            this.clickScore = this.clickScore - 100;
+            this.clickScore = this.clickScore - 500;
             console.log("minus 100");
             $("#score").html(this.clickScore);
             this.universeCount++;
@@ -132,7 +132,7 @@ class Clicker {
         });
 
         $("#buySamsung").click(()=> {
-            this.clickScore = this.clickScore - 150;
+            this.clickScore = this.clickScore - 1000;
             console.log("minus 150");
             $("#score").html(this.clickScore);
             this.samsungCount++;
@@ -145,7 +145,7 @@ class Clicker {
         });
 
         $("#buyNeil").click(()=> {
-            this.clickScore = this.clickScore - 250;
+            this.clickScore = this.clickScore - 2500;
             console.log("minus 250");
             $("#score").html(this.clickScore);
             this.neilCount++;
