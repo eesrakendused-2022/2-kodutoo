@@ -1,14 +1,15 @@
 class App{
-    // numbersArray = [[2,2,2,2],
-    //                 [2,2,2,2],
-    //                 [4,0,0,2],
-    //                 [2,2,2,2]];
+    // numbersArray = [[2,4,0,0],
+    //                 [16,8,4,2],
+    //                 [2,4,8,16],
+    //                 [16,8,4,2]];
 
     numbersArray = [[0,0,0,0],
                     [0,0,0,0],
                     [0,0,0,0],
                     [0,0,0,0]];
-    
+    win = 0;
+    endGame = 0;
     constructor(){
         
     }
@@ -69,6 +70,56 @@ class App{
 
         }
     }
+    highScoreBar(array){
+        $("#highScore").empty();
+        let max = array[0][0];
+        for(let i=0;i<4;i++){
+            for(let j=0;j<4;j++){
+                if(max < array[i][j]){
+                    max = array[i][j];
+                    if(max == 2048 && this.win != 1){
+                        this.win = 1;
+                        alert("You won!")
+                    }
+                }
+            }
+        }
+        console.log(max);
+        $("#highScore").text("High score: " + max);
+        return max;
+        // let result = {
+        //     high_score: max
+        // };
+
+        // $.ajax({
+        //     type: "POST",
+        //     url: "server.php",
+        //     data: result,
+        //     success: function (response) {
+        //         console.log("Усё робит");
+        //     },
+        //     error: function(error){
+        //         console.log("Нихуя не работает");
+        //     }
+        // });
+
+        // $.post('server.php', result).done(function(){
+        //     console.log('Success');
+        //     console.log(result);
+        // }).fail(function(){
+        //     alert('FAIL');
+        // }).always(
+        //     function(){
+        //         console.log('Tegime midagi AJAXiga');
+        //     }
+        // )
+    }
+
+    endGame(endOfGameNum){
+        if (endOfGameNum === 4){
+            alert("Teie skoor on: " + this.highScoreBar);
+        }
+    }
 }    
 
 class Move{
@@ -126,6 +177,7 @@ class Move{
         if(JSON.stringify(checkArray)==JSON.stringify(array)){
             console.log("Old-right checkArray: " + checkArray)
             console.log("Old-right array: " + array)
+            this.endGame += 1;
             return array;
         } else {
             console.log("New-right checkArray: " + checkArray)
@@ -219,39 +271,8 @@ class Move{
 let a = new App();
 let move = new Move();
 
-// a.numbersArray = move.moveLeft(a.numbersArray);
-// a.numbersArray = move.moveLeft(a.numbersArray);
-// a.numbersArray = move.moveRight(a.numbersArray);
-// a.numbersArray = move.moveLeft(a.numbersArray);
-// a.numbersArray = move.moveDown(a.numbersArray);
-// a.numbersArray = move.moveDown(a.numbersArray);
-
-
-// a.numbersArray = move.moveUp(a.numbersArray);
-// a.numbersArray = move.moveUp(a.numbersArray);
-// a.numbersArray = move.moveLeft(a.numbersArray);
-// a.numbersArray = move.moveLeft(a.numbersArray);
-
-// console.log(a.generateNum(a.numbersArray));
-// console.log(a.generateAndInsertStartingNumbers());
-// console.log(a.numbersArray);
-
-/*$(document).ready(function(){
-    $("#2048").html("<table><div class='gridcontainer'></div></table");
-    for (let i = 0; i < 16; i++) {
-        $(".gridcontainer").append("<div id='nr"+(i+1)+"'></div>");
-    }
-
-    let counter = 0;
-    for (let i = 0; i < 4; i++){
-        for(let j = 0; j < 4; j++){
-            
-            counter +=1;
-        }
-    }
-});
-*/
 $(document).ready(function(){
+    // $("body").append("<p>Autor: Andres Sikka</p>");
     a.printOnScreen(App.generateNum(a.numbersArray));
     a.printOnScreen(App.generateNum(a.numbersArray));
 });
@@ -263,19 +284,23 @@ $(document).ready(function(){
         switch (key.which){
             case 37:
                 a.numbersArray = move.moveLeft(a.numbersArray);
+                a.highScoreBar(a.numbersArray);
                 a.printOnScreen(a.numbersArray);
                 
                 break;
             case 38:
                 a.numbersArray = move.moveUp(a.numbersArray);
+                a.highScoreBar(a.numbersArray);
                 a.printOnScreen(a.numbersArray);
                 break;
             case 39:
                 a.numbersArray = move.moveRight(a.numbersArray);
+                a.highScoreBar(a.numbersArray);
                 a.printOnScreen(a.numbersArray);
                 break;
             case 40:
                 a.numbersArray = move.moveDown(a.numbersArray);
+                a.highScoreBar(a.numbersArray);
                 a.printOnScreen(a.numbersArray);
                 break;
         }
