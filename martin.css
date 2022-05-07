@@ -12,12 +12,3 @@ body{
     flex-wrap: wrap;
     align-content: center;
 }
-
-#player{
-    transform: scale(.5);
-    transform-origin: top left;
-}
-#playerare{
-    top: 20px;
-    left: 10px;
-}
