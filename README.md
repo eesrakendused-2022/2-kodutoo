@@ -1,5 +1,5 @@
 # 2-kodutoo
-## Clicker mang - Star Forger
+## Clicker mäng - Star Forger
 Autor: Kevin Rosenberg
 
 ![image](https://user-images.githubusercontent.com/90192448/167265276-8cce45f1-b99d-4c8f-8a15-ea76e503e8a4.png)
