@@ -1,28 +1,27 @@
-# 2-kodutoo
+# 2-kodutoo (Ussi mäng)
 
 2. kodutöö Eesrakenduste arendamises.
 
 ## Tähtaeg 07.05.2022 23:59
 
-Kujunda ja loo ise lihtne mäng. 
+Ülesanne: Kujundada ja luua mäng Jquery-t kasutades
 
-## Nõuded
+## Funktsionaalsus
 
-1. Mäng töötab.
-1. Mäng on tehtud jQuery-ga. 
-1. Mäng on objektorienteeritud (klassides) ja kasutatud on AJAX-it. 
-1. Mäng on originaalne ning kasutajaliides on maitsekalt kujundatud kasutades CSS-i - peab olema ise kirjutatud. 
-1. Autori ees- ja perenimi on lehel välja toodud
-1. Lehel on viide rakenduse repositooriumile
-1. `README.md` failis on välja toodud autori nimi, ekraanipilt rakendusest ja kirjeldatud funktsionaalsus
-1. Kui kasutatud on koodi mujalt, siis sellel on viidatud. 
+* Mäng algab lehe laadimisel
+* Uss luuakse alati ülesse vasakule nurka ning tema algus suund on seadistatud paremale
+* Järgnevalt on mängijal võimalik ussi liikumissuunda kontrollida noole klahvidega
+* Mängija eesmärk on ussiga süüa toitu ning selle alusel tõsta enda tulemust(score) võimalikult kõrgeks
+* Mäng lõppeb, kui uss põrkab iseenda või seinaga kokku ning lehele tuuakse esile mängu lõpu leht, kust mängija saab mängu uuesti käivitada restart nuppuga
 
-## Mõned ideed (lihtsalt, et mõte hakkaks jooksma)
 
-* Ussimäng
-* Cookie clicker
-* Erinevad arvutamismängud
-* 2048
-**
 
-Võimalik saada - 25 punkti
+## Pildid tööst
+Alguse pilt
+![image](https://user-images.githubusercontent.com/90237364/167259393-f7faa426-928d-4fd0-b056-3c4ac2a47738.png)
+Lõpu pilt
+![image](https://user-images.githubusercontent.com/90237364/167259372-207027ac-31f5-45d3-9c3d-cdb5872f2541.png)
+
+
+## Autor: Ragnar Valdre
+[link](https://www.tlu.ee/~roki1567/Eesrakendused/Kodutoo2/Snake.html) Mängule
