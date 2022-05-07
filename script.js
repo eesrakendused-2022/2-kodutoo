@@ -25,7 +25,7 @@ class ReactionGame {
     }
 
     shapeDisplay() {
-        let top = Math.random() * (this.screenHeight * 0.8);
+        let top = Math.random() * (this.screenHeight * 0.7);
         let left = Math.random() * (this.screenWidth * 0.8);
         let width = (Math.random() * 200) + 100;
 

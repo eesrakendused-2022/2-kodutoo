@@ -20,7 +20,7 @@ border-radius: 50px;
 }
 
 #startPage, #resultPage {
-margin: 15%;
+margin: 10%;
 padding: 5%;
 display: flex;
 flex-wrap: wrap;
@@ -34,7 +34,7 @@ background-color: whitesmoke;
 
 #gamePage {
 background-color: whitesmoke;
-height: 100vh;
+height: 90vh;
 width: 100vw;
 padding: 10px;
 }
@@ -46,4 +46,21 @@ background-color: lightslategray;
 color: white;
 padding: 15px;
 border-radius: 5px;
+}
+
+#footer {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+font-size: xx-small;
+height: 10vh;
+position: fixed;
+left: 0;
+bottom: 0;
+width: 100%;
+}
+
+#link {
+margin-left: 10px;
 }
