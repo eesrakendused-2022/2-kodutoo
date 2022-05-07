@@ -1,7 +1,7 @@
 class scoreBoard{
     constructor(){
         this.results = []
-        this.score = 10;
+        this.score = $('#score');
         this.loadFromFile();
         
     }
