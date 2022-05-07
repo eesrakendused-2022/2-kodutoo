@@ -1,28 +1,16 @@
 # 2-kodutoo
 
-2. kodutöö Eesrakenduste arendamises.
+2. kodutööks tegin laevade pommitamise mängu.
 
-## Tähtaeg 07.05.2022 23:59
+## Funktsionaalsus
+- Loosib juhusliku paigutusega laevu
+- Kontrollib, kas mängija sai laevale pihta
+- Kontrollib, kas pihta saanud laev läks põhja
+- Mängijal on 40 elu. Elu läheb maha iga kord, kuid mängi ei saa laevale pihta.
+- Tabamust näitavad ruutude värvid: roosa - möödas, punane - pihtas, must - põhjas.
+- info jaotises kuvatakse laevade hulka ja kui palju neist on põhjas. 
+- Tulemustes kuvatakse kümme parimat mängu kaheastmelise sordiga - alles jäänud elud + kulunud aeg. 
 
-Kujunda ja loo ise lihtne mäng. 
+## Kuvatõmmis
 
-## Nõuded
-
-1. Mäng töötab.
-1. Mäng on tehtud jQuery-ga. 
-1. Mäng on objektorienteeritud (klassides) ja kasutatud on AJAX-it. 
-1. Mäng on originaalne ning kasutajaliides on maitsekalt kujundatud kasutades CSS-i - peab olema ise kirjutatud. 
-1. Autori ees- ja perenimi on lehel välja toodud
-1. Lehel on viide rakenduse repositooriumile
-1. `README.md` failis on välja toodud autori nimi, ekraanipilt rakendusest ja kirjeldatud funktsionaalsus
-1. Kui kasutatud on koodi mujalt, siis sellel on viidatud. 
-
-## Mõned ideed (lihtsalt, et mõte hakkaks jooksma)
-
-* Ussimäng
-* Cookie clicker
-* Erinevad arvutamismängud
-* 2048
-**
-
-Võimalik saada - 25 punkti
+![Screenshot 2022-05-07 at 11-00-50 Laevade pommitamine](https://user-images.githubusercontent.com/90237413/167245050-666e4b26-5ce5-4025-b749-9ba92cab71d6.png)
