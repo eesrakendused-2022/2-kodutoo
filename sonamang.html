@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="proov.js" defer></script>
+    <script>
+        function info(){
+            const newDiv = document.createElement("div");
+            const examples = document.createTextNode("Näited");
+            const picDiv = document.createElement("div");
+            picDiv.style.cssText = 'width:25vw;height:10vh;background-image:url("näide1.JPG");background-size:cover;background-position:center';
+            const picDiv2 = document.createElement("div");
+            picDiv2.style.cssText = 'width:25vw;height:10vh;background-image:url("näide2.JPG");background-size:cover;background-position:center';
+            const picDiv3 = document.createElement("div");
+            picDiv3.style.cssText = 'width:25vw;height:10vh;background-image:url("näide3.JPG");background-size:cover;background-position:center';
+            const grey = document.createTextNode("Sõnas pole ühtegi sellist tähte.");
+            const yellow = document.createTextNode("N-täht on sõnas, aga vale koha peal.");
+            const green = document.createTextNode("I-täht on sõnas ja õiges kohas.");
+            newDiv.appendChild(examples);
+            newDiv.appendChild(picDiv);
+            newDiv.appendChild(green);
+            newDiv.appendChild(picDiv2);
+            newDiv.appendChild(yellow);
+            newDiv.appendChild(picDiv3);
+            newDiv.appendChild(grey);
+
+            const newBtn = document.createElement("button");
+            newBtn.style.cssText = 'background-color: #4CAF50;border:none;color: white;padding: 15px 32px;text-align: center;text-decoration: none;display: inline-block;font-size: 16px;margin: 4px 2px;cursor: pointer;';
+            newBtn.innerHTML = "Jätka mängu";
+            
+            newDiv.appendChild(newBtn);
+            newBtn.addEventListener("click", function(){
+                document.body.removeChild(newDiv);
+            });
+
+            newDiv.style.cssText = 'position:absolute;width:100%;height:100%;z-index:5;background-color:black;color:white;font-size:3em;top:0;left:0;display:flex;flex-direction:column;align-items:center;';
+            document.body.appendChild(newDiv);
+        }
+    </script>
+    <title>Sõnamäng</title>
+</head>
+<body>
+    <div id="info">
+        <h1>Sõna äraarvamise mäng</h1>
+        <div id="tutorial">
+            <p>
+                Arva ära SÕNA kuue katsega. 
+                Iga pakkumine peab olema reaalne viietäheline sõna. 
+                Esitamiseks vajutage ENTER. 
+                Pärast igat arvamist muutub ruutude värv, mis näitab, kui lähedal teie pakkumine sellele sõnale oli.
+            </p>
+        </div>
+        <input type="button" value="Mängi" id="btn">
+    </div>
+    <div id="gameContainer">
+        <button id="info-button" onclick="info()"></button>
+        <h1>Sõnamäng</h1>
+        <div id="cellContainer">
+            <div id="0" class="cell"></div>
+            <div id="1" class="cell"></div>
+            <div id="2" class="cell"></div>
+            <div id="3" class="cell"></div>
+            <div id="4" class="cell"></div>
+            <div id="5" class="cell"></div>
+            <div id="6" class="cell"></div>
+            <div id="7" class="cell"></div>
+            <div id="8" class="cell"></div>
+            <div id="9" class="cell"></div>
+            <div id="10" class="cell"></div>
+            <div id="11" class="cell"></div>
+            <div id="12" class="cell"></div>
+            <div id="13" class="cell"></div>
+            <div id="14" class="cell"></div>
+            <div id="15" class="cell"></div>
+            <div id="16" class="cell"></div>
+            <div id="17" class="cell"></div>
+            <div id="18" class="cell"></div>
+            <div id="19" class="cell"></div>
+            <div id="20" class="cell"></div>
+            <div id="21" class="cell"></div>
+            <div id="22" class="cell"></div>
+            <div id="23" class="cell"></div>
+            <div id="24" class="cell"></div>
+            <div id="25" class="cell"></div>
+            <div id="26" class="cell"></div>
+            <div id="27" class="cell"></div>
+            <div id="28" class="cell"></div>
+            <div id="29" class="cell"></div>
+        </div>
+        <div id="guesses"></div>
+        <div id="word"></div>
+        <div id="restart"></div>
+    </div>
+    <div id="name">
+        <p>Raul Raudsepp</p>
+        <a href="https://github.com/rauldsepp/2-kodutoo" id="link">GitHub</a>
+    </div>   
+</body>
+</html>
