@@ -7,7 +7,7 @@ http://greeny.cs.tlu.ee/~marrun/2022/ERP/2-kodutoo/
 - Loosib juhusliku paigutusega laevu.
 - Kontrollib, kas mängija sai laevale pihta.
 - Kontrollib, kas pihta saanud laev läks põhja.
-- Mängijal on 40 elu. Elu läheb maha iga kord, kui mängi ei saa laevale pihta.
+- Mängijal on 40 elu. Elu läheb maha iga kord, kui mängija ei saa laevale pihta.
 - Tabamust näitavad ruutude värvid: roosa - möödas, punane - pihtas, must - põhjas.
 - Info jaotises kuvatakse laevade hulka ja kui palju neist on põhjas.
 - Võitja tulemus salvestatakse serverisse.
