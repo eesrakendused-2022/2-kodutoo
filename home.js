@@ -4,16 +4,16 @@ class Home{
         this.totalcookies = 0;
 
         this.item1count = 0;
-        this.item1cost = 1;
+        this.item1cost = 30;
 
         this.item2count = 0;
-        this.item2cost = 1;
+        this.item2cost = 200;
 
         this.item3count = 0;
-        this.item3cost = 1;
+        this.item3cost = 3000;
 
         this.item4count = 0;
-        this.item4cost = 1;
+        this.item4cost = 10000;
 
         this.results = [];
 
