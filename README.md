@@ -1,6 +1,7 @@
 # 2-kodutoo
 
 2. kodutööks tegin laevade pommitamise mängu.
+http://greeny.cs.tlu.ee/~marrun/2022/ERP/mang/
 
 ## Funktsionaalsus
 - Loosib juhusliku paigutusega laevu.
@@ -8,7 +9,8 @@
 - Kontrollib, kas pihta saanud laev läks põhja.
 - Mängijal on 40 elu. Elu läheb maha iga kord, kui mängi ei saa laevale pihta.
 - Tabamust näitavad ruutude värvid: roosa - möödas, punane - pihtas, must - põhjas.
-- info jaotises kuvatakse laevade hulka ja kui palju neist on põhjas. 
+- Info jaotises kuvatakse laevade hulka ja kui palju neist on põhjas.
+- Võitja tulemus salvestatakse serverisse.
 - Tulemustes kuvatakse kümme parimat mängu kaheastmelise sordiga - alles jäänud elud + kulunud aeg.
 - Kui mängija tulemus mahub esikümnesse, siis on see punase tekstiga esile tõstetud.
 - Mäng on kohanduva kujundusega vastavalt seadme ekraanilaiusele. 
