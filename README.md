@@ -1,7 +1,7 @@
 # 2-kodutoo
 
 2. kodutööks tegin laevade pommitamise mängu.
-http://greeny.cs.tlu.ee/~marrun/2022/ERP/mang/
+http://greeny.cs.tlu.ee/~marrun/2022/ERP/2-kodutoo/
 
 ## Funktsionaalsus
 - Loosib juhusliku paigutusega laevu.
