@@ -1,0 +1,73 @@
+body{
+    background-image: url('Background/background.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0;   
+}
+
+
+#game_contents{
+    display: flex;
+}
+
+#scoreboard{
+    position: absolute;
+    margin-left: 350px;
+    margin-top: 260px;
+    width: 150px;
+    height: 50px;
+    border: 2px solid rgb(105, 80, 80);
+    line-height: 50px;
+    text-align: center;
+    
+}
+
+#board{
+    display: block;
+    margin: 100px auto;
+    border: 10px solid rgb(22, 43, 26);
+}
+
+#popup{
+    position: absolute;
+    display: none;
+    height: 100%;
+    width: 100%;
+    background: rgba(54, 48, 48, 0.856);
+}
+
+#message{
+    margin-left: 45.2%;
+    margin-top: 17%;
+    font-size: 2em;
+}
+
+input[type="button"]{
+
+    background-color: #04C35C;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    margin-left: 43.5%;
+    margin-top: 1%;
+    width: 200px;
+    height: 80px;
+    
+}
+
+input[type="button"]:hover{
+    background-color: #00843d;
+}
+
+#name{
+    position: absolute;
+    font-size: 2em;
+}
+
+#link{
+    position: absolute;
+    font-size: 2em;
+    margin-top: 1.8%;
+}
