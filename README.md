@@ -17,3 +17,25 @@
 4. Mängu skoorid saadetakse tekstifaili db.txt kasutades AJAX-i põhimõtteid
 5. Lehel kuvatakse ka see, kelle kord on käia (juhul, kui meelest läks vms)
 6. Kasutusel on 3 klassi ja 1 funktsionaalne js fail. Klassid 1 ja 2 vastutavad liikumise/söömise/highlighti loogika eest. Klass 3 tegeleb puhtalt ainult AJAX-ga. Func js fail vastutab mängu üldise loogika eest, ehk kes millal käib, millal viiakse AJAX klassi info ja saadetakse andmebaasi, millal kuvatakse võit jne. 
+
+Mängu saab proovida siin: 
+http://www.tlu.ee/~krisplv/jQueryGame/
+või siin (vajalik greeny tunnel):
+http://greeny.cs.tlu.ee/~kripol/frontend/jQueryGame/
+
+# Pildid mängust
+
+Pilt coverist, mis on välja toodud mängu nimi, väike sissejuhatus ja võimalus sisestada mängijate nimed
+![lahe pilt](jQueryGame/front.png)
+
+Pilt mängust endast.
+![lahe pilt](jQueryGame/mainGame.png)
+
+Pilt lipu liikumisest laual
+![lahe pilt](jQueryGame/queenMovement.png)
+
+Pilt, kus valge võitis.
+![lahe pilt](jQueryGame/whiteWin.png)
+
+Pilt autori nimest ja lingist gitHub reposse(click on logo)
+![lahe pilt](jQueryGame/Screenshot_1.png)
