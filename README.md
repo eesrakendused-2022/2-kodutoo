@@ -4,7 +4,7 @@
 
 ## Tähtaeg 07.05.2022 23:59
 
-Ülesanne: Kujundada ja luua mäng Jquery-t kasutades
+Ülesanne: Kujundada ja luua mäng kasutades Jquery-t 
 
 ## Funktsionaalsus
 
