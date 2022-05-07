@@ -1,0 +1,127 @@
+body {
+    background-color: grey;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+#title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+#highscore , #highscoreBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: yellow;
+}
+
+#clickContainer {
+    display: flex;
+    background-color: blue;
+    flex-direction: column;
+    width: 50vw;
+    height: 75vh;
+    border: 5px solid black;
+    background-image: url('shooting_stars.gif'); 
+    background-attachment: fixed; 
+    background-size: cover;
+}
+
+#shop {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(0, 66, 209);
+    width: 50vw;
+    height: 60vh;
+    border: 5px solid black;
+}
+
+.shopItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 86);
+    height: 45px;
+    margin-top: 15px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.shopItem > button {
+    width: 125px;
+    height: 40px;
+}
+
+#game {
+    display: flex;
+    flex-direction: row;
+}
+
+#clicker {
+    /* background-color: green; */
+    border: 4px dotted black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    padding: 75px;
+    margin: 50px;
+    height: 250px;
+    background-image: url('spinny_star.gif');
+    background-size: cover;
+}
+
+#score , #saveBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#score {
+    font-size: 35px;
+    color: white;
+}
+
+#saveBox {
+    margin-top: 50px;
+}
+
+#author {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    height: 15vh;
+}
+
+#banner {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    color: white;
+}
+
+#shopnad {
+    display: flex;
+    flex-direction: column;
+}
+
+#ad {
+    background-color: rgb(115, 115, 245);
+    height: 14vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    border: 5px solid black;
+}
