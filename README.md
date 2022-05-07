@@ -1,4 +1,3 @@
-1. `README.md` failis on välja toodud autori nimi, ekraanipilt rakendusest ja kirjeldatud funktsionaalsus
 Martin Lukas Kodutöö 2 Tehtud
 ![gameCapture](https://user-images.githubusercontent.com/90237322/167262168-a65657e8-4e77-45c0-9149-86cbd613c8f5.PNG)
 
