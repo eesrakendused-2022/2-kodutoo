@@ -2,27 +2,16 @@
 
 2. kodutöö Eesrakenduste arendamises.
 
-## Tähtaeg 07.05.2022 23:59
+## Ekraanipildid
 
-Kujunda ja loo ise lihtne mäng. 
+![Algusleht](/start-page.png)
+![Mänguleht](/game-page.png)
+![Lõpuleht](/end-page.png)
 
-## Nõuded
+## Autor
 
-1. Mäng töötab.
-1. Mäng on tehtud jQuery-ga. 
-1. Mäng on objektorienteeritud (klassides) ja kasutatud on AJAX-it. 
-1. Mäng on originaalne ning kasutajaliides on maitsekalt kujundatud kasutades CSS-i - peab olema ise kirjutatud. 
-1. Autori ees- ja perenimi on lehel välja toodud
-1. Lehel on viide rakenduse repositooriumile
-1. `README.md` failis on välja toodud autori nimi, ekraanipilt rakendusest ja kirjeldatud funktsionaalsus
-1. Kui kasutatud on koodi mujalt, siis sellel on viidatud. 
+Merle Paula Videvik 
 
-## Mõned ideed (lihtsalt, et mõte hakkaks jooksma)
+## Funktsionaalsus
 
-* Ussimäng
-* Cookie clicker
-* Erinevad arvutamismängud
-* 2048
-**
-
-Võimalik saada - 25 punkti
+Mängu eesmärk on võimalikult kiirelt vajutada ekraanile üksteise järel ilmuval 10-l kujundil. Iga kujundi klikkamisel ilmub vasakusse ülaserva konkreetse selle kujundi klikkamiseks kulunud aeg. Peale 10 kujundit näidatakse kogutulemust.

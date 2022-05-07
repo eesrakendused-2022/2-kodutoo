@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reaction game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div id="startPage">
+        <h2>Kui hea on sinu reageerimiskiirus?</h2>
+        <h2>Klikka kujundil nii kiirelt, kui suudad!</h2>
+        <button id="startButton">Alusta mängu</button>
+    </div>
+    <div id="gamePage" style="display: none;">
+        <div>Aeg <span id="time"></span></div>
+        <div class="circle" id="shape"></div>
+    </div>
+    <div id="resultPage" style="display: none;">
+        <h2>Mäng läbi!</h2>
+        <h2>Sinu tulemus: <span id="resultTime"></span></h2>
+        <div id="results">Tulemused</div>
+        <button id="newGameButton">Mängi veel</button>
+    </div>
+    <div id="footer">&copy Merle Paula Videvik <span id="link"><a href="https://github.com/PaulaMerle/2-kodutoo"
+                target="_blank"> Link
+                koodireposse</a></span>
+    </div>
+</body>
+
+</html>
