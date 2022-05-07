@@ -1,0 +1,14 @@
+body{
+    background-color: #fff492ad;
+}
+
+#gamearea{
+    background-color: #fef28c;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
