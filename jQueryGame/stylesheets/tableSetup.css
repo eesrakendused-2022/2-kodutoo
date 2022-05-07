@@ -1,0 +1,301 @@
+table{
+    display:flex;
+    border-collapse: collapse;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    border: 10px solid black;
+    border-radius: 1em;
+    box-shadow: 1px 1px 50px purple;
+}
+#bg{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left:0;
+    background-image: url("../pieces/chessBG.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+}
+td{
+    width: 90px;
+    height: 90px;
+    border: 2px solid black;
+    border-radius: 0.2em;
+    align-items: center;
+}
+.table-hold{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    flex-direction:column;
+}
+tr{
+    background-image: url("../pieces/whiteMarble.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-color: rgba(0,0,0,0);
+}
+tr:nth-of-type(even) td:nth-of-type(odd),tr:nth-of-type(odd) td:nth-of-type(even){
+    /*background-image: url("../pieces/darkMarble.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;*/
+    background-color: black;
+}
+.pawnB{
+    width: 70px;
+    height: 70px;
+    background-color: red;
+    margin-left: auto;
+    margin-right:auto;
+    
+}
+.pawnW{
+    width: 70px;
+    height: 70px;
+    background-color: rgb(42, 77, 173);
+    margin-left: auto;
+    margin-right:auto;
+    
+}
+.rookW, .rookB{
+    width: 70px;
+    height: 70px;
+    background-color: rgb(31, 161, 70);
+    margin-left: auto;
+    margin-right:auto;
+}
+.bishopW, .bishopB{
+    width: 70px;
+    height: 70px;
+    background-color: rgb(187, 199, 21);
+    margin-left: auto;
+    margin-right:auto;
+}
+.queenW, .queenB{
+    width: 70px;
+    height: 70px;
+    background-color: rgb(145, 21, 107);
+    margin-left: auto;
+    margin-right:auto;
+}
+.knightW, .knightB{
+    width: 70px;
+    height: 70px;
+    background-color: rgb(121, 187, 149);
+    margin-left: auto;
+    margin-right:auto;
+}
+.kingW, .kingB{
+    width: 70px;
+    height: 70px;
+    background-color: rgb(219, 147, 13);
+    margin-left: auto;
+    margin-right:auto;
+}
+.pause{
+    position:relative ;
+    justify-self: center;
+    width: 20%;
+    height: inherit;
+    background-image: url("../pieces/whiteMarble.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 3px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 2px 2px rgb(255, 255, 255);
+    letter-spacing: 2px;
+    text-decoration: solid;
+    margin-bottom: 0.5em;
+    text-align: center;
+    font-size: 3em;
+    padding: 0.2em;
+}
+
+.pawnW{
+    background-image: url("../pieces/pawn.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-color: rgba(0,0,0,0);
+}
+.pawnB{
+    background-image: url("../pieces/pawnB.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-color: rgba(0,0,0,0);
+}
+
+.rookW{
+    background-image: url("../pieces/castleW.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-color: rgba(0,0,0,0);
+}
+.rookB{
+    background-image: url("../pieces/castleB.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-color: rgba(0,0,0,0);
+}
+
+.bishopW{
+    background-image: url("../pieces/bishW.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-color: rgba(0,0,0,0);
+}
+.bishopB{
+    background-image: url("../pieces/BishB.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-color: rgba(0,0,0,0);
+}
+.knightW{
+    background-image: url("../pieces/knightW.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-color: rgba(0,0,0,0);
+}
+.knightB{
+    background-image: url("../pieces/knightB.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-color: rgba(0,0,0,0);
+}
+
+.queenW{
+    background-image: url("../pieces/queenW.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-color: rgba(0,0,0,0);
+}
+.queenB{
+    background-image: url("../pieces/QueenB.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-color: rgba(0,0,0,0);
+}
+
+.kingW{
+    background-image: url("../pieces/kingW.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-color: rgba(0,0,0,0);
+}
+.kingB{
+    background-image: url("../pieces/kingB.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-color: rgba(0,0,0,0);
+}
+.all-past-scores{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 25vw;
+    height:98%;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.384);
+    z-index: 2;
+    top:10px;
+    left: 10px;
+    border: 2px solid black;
+    border-radius: 1em;
+}
+.eat-count{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 350px;
+    height:98%;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.384);
+    z-index: 2;
+    top:10px;
+    right: 10px;
+    border: 2px solid black;
+    border-radius: 1em;
+}
+.scoreboard{
+    padding: 1em;
+    height: 10em;
+    
+}
+.scoreboard h1{
+    text-align: center;
+    text-decoration: underline;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.scoreboard, #scoreHolder p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.4em;
+    text-decoration: solid;
+}
+#gameOver{
+    display:none;
+    flex-direction: column;
+    position: fixed;
+    justify-self: center;
+    width: 80%;
+    background-image: url("../pieces/whiteMarble.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 3px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 2px 2px rgb(255, 255, 255);
+    box-shadow: 1px 1px 100px rgb(145, 21, 107);
+    letter-spacing: 2px;
+    text-decoration: solid;
+    margin-bottom: 0.5em;
+    text-align: center;
+    font-size: 5em;
+    padding: 0.2em;
+    z-index: 10;
+}
+#gameOver p{
+    font-size: 0.5em;
+    padding: 0;
+    border:0;
+    margin:0;
+}
+#newInit{
+    width:7em;
+    height: 5em;
+}
+#names{
+    position: absolute;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 150%;
+    z-index: 5;
+    font-size: 3em;
+    background-color: black;
+    color: white;
+}
+.intro{
+    padding: 0.5em;
+    letter-spacing: 1px;
+}
+
+@keyframes whooshThePiece {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
