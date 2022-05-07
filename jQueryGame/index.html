@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capture-the-king</title>
+    <link rel="stylesheet" href="stylesheets/tableSetup.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script type="module" src="js/chessEngine.js" defer></script>
+    <script type="module" src="js/startChess.js" defer></script>
+    <script type="module" src="js/ajaxHandler.js"></script>
+</head>
+<body>
+    <canvas id="bg"></canvas>
+    <div id="names" class="name-start">
+        <h1>Welcome to Capture The King!</h1>
+        <label for="nameValB"><p>Black side player: </p></label>
+        <input type="text" id="nameValB">
+        <label for="nameValW"><p></p>White side player: </p></label>
+        <input type="text" id="nameValW">
+        <input type="button" value="play" id="init">
+        <div class="intro">
+            <p>Capture The King is a chess game variant. The game is a lot more 
+                agressive than your typical match of chess, because the goal is 
+                to capture the opponents king, not trap it. For that reason the games
+                are on average more fast-paced. There is no indications for checks in 
+                this game, You will have to rely on your decision making skills.
+            </p>
+        </div>
+    </div>
+    <container class="table-hold">
+
+        </div>
+        <div id="gameOver">YOU WIN
+            <div id="newGame">
+                <label for="newInit"><p>Play again</p></label>
+                <input type="button" value="Go!" id="newInit">
+            </div>
+        </div>
+        <div id="timer" class="pause">00:00</div>
+        <div id="allScores" class="all-past-scores">
+            <h1> Latest scores</h1>
+            <div id="scoreHolder"></div>
+        </div>
+        <div id="blackEaten" class="eat-count">
+            <div id="blacksEaten" class="scoreboard">
+                <h1>Blacks score</h1>
+                <div id="nameBlack"><p>Player name: Kr</p></div>
+                <div class="scoreB" id="scoreB">
+                    <p>Enemy pieces eaten: 1</p>
+                </div>
+            </div>
+            <div id="whiteEaten" class="scoreboard">
+                <h1>Whites score</h1>
+                <div id="nameWhite"><p>Player name: Kr</p></div>
+                <div class="scoreW" id="scoreW">
+                    <p>Enemy pieces eaten: 1</p>
+                </div>
+            </div>
+        </div>
+        <table id="playArea">
+            <tr>
+                <td id="a8"><div class="blacks rookB" id="rookBlackA"></div></td>
+                <td id="b8"><div class="blacks knightB" id="knightBlackB"></div></td>
+                <td id="c8"><div class="blacks bishopB" id="bishopBlackC"></div></td>
+                <td id="d8"><div class="blacks queenB" id="queenBlackC"></div></td>
+                <td id="e8"><div class="blacks kingB" id="kingBlackE"></div></td>
+                <td id="f8"><div class="blacks bishopB" id="bishopBlackF"></div></td>
+                <td id="g8"><div class="blacks knightB" id="knightBlackG"></div></td>
+                <td id="h8"><div class="blacks rookB" id="rookBlackH"></div></td>
+            </tr>
+            <tr>
+                <td id="a7"><div class="blacks pawnB" id="pawnBlackA"></div></td>
+                <td id="b7"><div class="blacks pawnB" id="pawnBlackB"></div></td>
+                <td id="c7"><div class="blacks pawnB" id="pawnBlackC"></div></td>
+                <td id="d7"><div class="blacks pawnB" id="pawnBlackD"></div></td>
+                <td id="e7"><div class="blacks pawnB" id="pawnBlackE"></div></td>
+                <td id="f7"><div class="blacks pawnB" id="pawnBlackF"></div></td>
+                <td id="g7"><div class="blacks pawnB" id="pawnBlackG"></div></td>
+                <td id="h7"><div class="blacks pawnB" id="pawnBlackH"></div></td>
+        </tr>
+        <tr>
+            <td id="a6"></td>
+            <td id="b6"></td>
+            <td id="c6"></td>
+            <td id="d6"></td>
+            <td id="e6"></td>
+            <td id="f6"></td>
+            <td id="g6"></td>
+            <td id="h6"></td>
+        </tr>
+        <tr>
+            <td id="a5"></td>
+            <td id="b5"></td>
+            <td id="c5"></td>
+            <td id="d5"></td>
+            <td id="e5"></td>
+            <td id="f5"></td>
+            <td id="g5"></td>
+            <td id="h5"></td>
+        </tr>
+        <tr>
+            <td id="a4"></td>
+            <td id="b4"></td>
+            <td id="c4"></td>
+            <td id="d4"></td>
+            <td id="e4"></td>
+            <td id="f4"></td>
+            <td id="g4"></td>
+            <td id="h4"></td>
+        </tr>
+        <tr>
+            <td id="a3"></td>
+            <td id="b3"></td>
+            <td id="c3"></td>
+            <td id="d3"></td>
+            <td id="e3"></td>
+            <td id="f3"></td>
+            <td id="g3"></td>
+            <td id="h3"></td>
+        </tr>
+        <tr>
+                <td id="a2"><div class="whites pawnW" id="pawnWhiteA"></div></td>
+                <td id="b2"><div class="whites pawnW" id="pawnWhiteB"></div></td>
+                <td id="c2"><div class="whites pawnW" id="pawnWhiteC"></div></td>
+                <td id="d2"><div class="whites pawnW" id="pawnWhiteD"></div></td>
+                <td id="e2"><div class="whites pawnW" id="pawnWhiteE"></div></td>
+                <td id="f2"><div class="whites pawnW" id="pawnWhiteF"></div></td>
+                <td id="g2"><div class="whites pawnW" id="pawnWhiteG"></div></td>
+                <td id="h2"><div class="whites pawnW" id="pawnWhiteH"></div></td>
+        </tr>
+        <tr>
+            <td id="a1"><div class="whites rookW" id="rookWhiteA"></div></td>
+            <td id="b1"><div class="whites knightW" id="knightWhiteB"></div></td>
+            <td id="c1"><div class="whites bishopW" id="bishopWhiteC"></div></td>
+            <td id="d1"><div class="whites queenW" id="queenWhiteC"></div></td>
+            <td id="e1"><div class="whites kingW" id="kingWhiteE"></div></td>
+            <td id="f1"><div class="whites bishopW" id="bishopWhiteF"></div></td>
+            <td id="g1"><div class="whites knightW" id="knightWhiteG"></div></td>
+            <td id="h1"><div class="whites rookW" id="rookWhiteH"></div></td>
+        </tr>
+    </table>
+</container>
+
+<script type="module" src="js/starter.js" defer></script>
+    
+</body>
+</html>
