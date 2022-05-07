@@ -3,13 +3,15 @@
 2. kodutööks tegin laevade pommitamise mängu.
 
 ## Funktsionaalsus
-- Loosib juhusliku paigutusega laevu
-- Kontrollib, kas mängija sai laevale pihta
-- Kontrollib, kas pihta saanud laev läks põhja
-- Mängijal on 40 elu. Elu läheb maha iga kord, kuid mängi ei saa laevale pihta.
+- Loosib juhusliku paigutusega laevu.
+- Kontrollib, kas mängija sai laevale pihta.
+- Kontrollib, kas pihta saanud laev läks põhja.
+- Mängijal on 40 elu. Elu läheb maha iga kord, kui mängi ei saa laevale pihta.
 - Tabamust näitavad ruutude värvid: roosa - möödas, punane - pihtas, must - põhjas.
 - info jaotises kuvatakse laevade hulka ja kui palju neist on põhjas. 
-- Tulemustes kuvatakse kümme parimat mängu kaheastmelise sordiga - alles jäänud elud + kulunud aeg. 
+- Tulemustes kuvatakse kümme parimat mängu kaheastmelise sordiga - alles jäänud elud + kulunud aeg.
+- Kui mängija tulemus mahub esikümnesse, siis on see punase tekstiga esile tõstetud.
+- Mäng on kohanduva kujundusega vastavalt seadme ekraanilaiusele. 
 
 ## Kuvatõmmis
 
