@@ -13,6 +13,11 @@ body{
     align-items: center;
     justify-content: center;
 }
+#goalcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 #scoreleft, #scoreright, #kriips{
     color: white;
@@ -37,13 +42,14 @@ body{
 
 #ball{
     position: absolute;
-    width: 2vw;
-    height: 6vh;
+    width: 40px;
+    height: 40px;
     background-color:white;
     border-radius: 50%;
 }
 
 #goal{
+    color: white;
     font-size: 1000%;
     transition: 1.5s all;
     display: inline-block;
