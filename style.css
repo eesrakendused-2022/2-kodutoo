@@ -1,0 +1,182 @@
+body {
+	padding: 20px 20px 20px 20px;
+	background-color: #0a1f36;
+	color: #ffffff;
+	font-family: Calibri;
+}
+h2 {
+	line-height: 60px;
+	margin-top: 0;
+}
+h3 {
+	color: #f1c40f;
+}
+#name {
+	color: #f1c40f;
+	position: fixed;
+	padding: 0;
+	margin: 0;
+
+}
+#container {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	
+}
+#gameBoard {
+	position: relative;
+	display: block;
+	margin-top: 10px;
+	width: 800px;
+	height: 400px;
+	background: url("img/backg.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+}
+#player {
+	display: inline-block;
+	position: absolute;
+	width: 80px;
+	height: 85px;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	top: 0;
+	left: 0;
+	
+}
+#player img {
+	width: 100%;
+	
+}
+.monster {
+	display: inline-block;
+	position: absolute;
+	width: 50px;
+	height: 80px;
+	padding: 0;
+	margin: 0;
+	background-size: cover;
+
+}
+.monster img {
+	width: 100%;
+	height: 100%;
+
+}
+
+#gameOver {
+	position: absolute;
+	top: 40%;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 1.2em;
+	color: #000;
+	padding: 10px;
+	background: rgba(255,255,255,0.9 );
+	width: 100px;
+	text-align: center;
+}
+
+#gameWin {
+	position: absolute;
+	top: 40%;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 1.2em;
+	color: #000;
+	padding: 10px;
+	background: rgba(255,255,255,0.9 );
+	width: 100px;
+	text-align: center;
+}
+
+#paused, #status{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 1.2em;
+	padding: 10px;
+	background: rgba(0,0,0,0.5);
+	width: 100px;
+	text-align: center;
+	color: #fff;
+}
+#gameTimer {
+	position: relative;
+	display: inline-block;
+	float: left;
+	height: 100%;
+	font-size: 1.2em;
+	color: #fff;
+	padding: 10px;
+	background: #eb790f;
+	box-sizing: border-box;
+}
+#level {
+	position: relative;
+	display: inline-block;
+	float: left;
+	height: 100%;
+	font-size: 1.2em;
+	color: #000;
+	padding: 10px;
+	background: rgb(114, 3, 3);
+	box-sizing: border-box;
+}
+#lives {
+	position: relative;
+	display: inline-block;
+	float: left;
+	height: 100%;
+	font-size: 1.2em;
+	color: #000;
+	padding: 10px;
+	background: yellow;
+	box-sizing: border-box;
+}
+
+#start {
+	position: absolute;
+	display: inline-block;
+	top: 0;
+	right: 0;
+	font-size: 1.2em;
+	height: 100%;
+	color: #000;
+	padding: 10px;
+	background: #fff;
+	box-sizing: border-box;
+	transition: all 0.5s ease;
+}
+#start:hover {
+	cursor: pointer;
+	background: #000;
+	color: #fff;
+}
+#controlPanel {
+	position: relative;
+	display: inline-block;
+	top: 0;
+	left: 0;
+	box-sizing: border-box;
+	width: 800px;
+	padding: 0;
+	margin: 0;
+	height: 45px;
+
+}
