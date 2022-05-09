@@ -1,0 +1,91 @@
+body{
+    margin:0;
+    padding:0;
+}
+
+#container{
+    width:100vw;
+    height:70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: bisque;
+}
+
+#info{
+    width:100vw;
+    height:5vh;
+    background-color: lightblue;
+    text-align: center;
+}
+
+#results{
+    width:100vw;
+    height:25vh;
+    background-color: lightgrey;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+#results>div{
+    display: flex;
+    justify-content: space-between;
+}
+#results>div>div{
+    width: 33%;
+    text-align: center;
+}
+
+div{
+    font-size: 28px;
+}
+
+#name{
+    position: absolute;
+    width:100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#startNew{
+    display: none;
+    padding: 10px;
+    color: red;
+}
+
+.red-background{
+    background-color: rgba(255, 0, 0, 0.277) !important;
+}
+
+#name{
+    color: white;
+}
+
+#name label{
+    font-size: 1.7em;
+}
+
+#name input{
+    height: 50px;
+    font-size: 38px;
+    min-width: 300px;
+    margin: 10px;
+}
+
+#wordDiv{
+    font-size: 3.5em;
+}
+
+#error{
+    display: none;
+    background-color: red;
+    padding: 5px;
+}
