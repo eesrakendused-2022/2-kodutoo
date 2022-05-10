@@ -19,7 +19,7 @@ Trips-traps-trull:
 
 ## Kasutatud koodinäited
 
-Üldine idee ja põhi:
+Üldine idee ja põhi (õpetusest võetud ideed olid nuppude kasutamine tabelis ja võitva rea värvimine):
 * https://www.geeksforgeeks.org/create-a-tic-tac-toe-game-using-jquery/
 * tunnis läbi tehtud näited
 
