@@ -1,5 +1,3 @@
-
-
 $(document).ready(function () {
   
 var playerDir = "stop";
@@ -7,13 +5,15 @@ var playerSpeed = 5;
 var xpos;
 var ypos;
 
+
+
 var pause = "false";
 var gameTickTime = 10;
 var timeLapsed;
 var endGame;
 var numLives;
 var level = 1; 
-var timeLimit = 30;
+
 
 $("#start").show().html("START");
 $("#lives").hide();
@@ -31,17 +31,41 @@ var monsterDirX = {};
 var monsterSpeed = {};
 
 
+
 function game_tick() {
 
     moveMonsters();
     movePlayer(playerDir);
 
     check_collision();
-    check_collision2();
+    check_level();
 
     checkGameStatus();
+     
 
 }
+function ajaxNimi(theName) { //ajaxiga nime saatmine 
+    $.ajax({
+        type: "POST",
+        url: "server.php",
+        data: { name: theName },
+        dataType: 'json',
+        success: function(response){
+            console.log(response);
+            $('#result').html('Nimi on: '+response.responsed);    
+        }
+    });   
+}
+
+$( document ).ready(function() {
+    $('#sendName').on('click', function() {
+        var name = $('#nameBox').val();
+        ajaxNimi(name);
+    });
+});
+
+
+
 
 $(document).on("click","#start", function(e) {
     e.preventDefault();
@@ -69,7 +93,7 @@ $(document).on("click","#start", function(e) {
 function gameTimer() {
     $("#gameTimer").html("TIME: " + timeLapsed + "s");
     timeLapsed++;
-    if (timeLapsed > timeLimit || pause == "true") {
+    if (pause == "true") {
         window.stop(gameTimer);
     } else {
         window.setTimeout(gameTimer, 1000);
@@ -86,25 +110,27 @@ function checkGameStatus() {
         $("#lives").hide();
         $("#level").hide();
         $("#gameTimer").hide();
+        
 
         $("#start").show().html("START");
     } else if  (level == 5) {
         $("#gameWin").show().html("VÕITSID MÄNGU");
         window.stop(game_tick);
         $("#gameTimer").hide();
+       
         $("#start").show().html("START");
     } else {
         window.setTimeout(game_tick, gameTickTime);
     }
 }
 
-function addPlayer() {
+function addPlayer() {       //mangija lisamine
     $("#gameBoard").append("<div id='player'></div>");
     $("#player").html("<img src='img/player.png'/>");
     $("#player").css({ top: 286, left: 350});
 }
 
-function addMonsters() {
+function addMonsters() {    //zombide lisamine
     $(".monster").remove();
 
     var numMonsters = level + Math.floor(Math.random()*2);
@@ -136,7 +162,7 @@ function addMonsters() {
     });
 }
 
-function moveMonsters() {
+function moveMonsters() {   //zombide liikumine
     var i = 0;
     $(".monster").each(function(){
         
@@ -153,7 +179,7 @@ function moveMonsters() {
     });
 }    
 
-function check_collision() {
+function check_collision() {   //kokku porkamine
     var newpos = $("#player").position();
     xpos = newpos.left;
     ypos = newpos.top;
@@ -181,7 +207,7 @@ function check_collision() {
 
 }
 
-function check_collision2() {
+function check_level() {
     var newpos = $("#player").position();
     xpos = newpos.left;
     ypos = newpos.top;
@@ -193,10 +219,11 @@ function check_collision2() {
     
         $("#lives").html("LIVES: " + numLives);
         $("#level").html("LEVEL: " + level);
-    }    
+    }   
+    
 }
 
-function movePlayer(playerDir) {
+function movePlayer(playerDir) {   //mangija liikumine
     var pos = $("#player").position();
     xpos = Math.round(pos.left);
     ypos = Math.round(pos.top);
@@ -225,19 +252,15 @@ function movePlayer(playerDir) {
     }
 } 
 
-$(document).keyup(function(event) {
-    var e = event || evt;
+$(document).keyup(function(event) {  //klahvist lahti laskmine
     var charCode = event.which || event.keyCode;
-    var c = String.fromCharCode(charCode);
     if (charCode == "37" || charCode == "39" || charCode == "38" ) {
         playerDir = "stop";
     }
 });
 
-$(document).keydown(function(event) {
-    var e = event || evt;
+$(document).keydown(function(event) {  //klahvile vajutus + hüppamine
     var charCode = event.which || event.keyCode;
-    var c = String.fromCharCode(charCode);
 
     if(charCode == "80") {
         if ( pause == "true") {
@@ -272,7 +295,7 @@ $(document).keydown(function(event) {
     if (charCode == "38") {
         $("#player").animate({top: '-=50%'});
 		$("#player").animate({top: '+=50%'});
-        
+        //hüpe
         
     }
 });
