@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600;700&display=swap');
+	</style>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+	<script src="tictactoe.js" defer></script>
+	<title>Trips-traps-trull</title>
+</head>
+<body>
+	<div id="nameFormDiv">
+		<label for="name1">Esimese mängija nimi</label><br>
+		<input type="text" name="name1" id="name1"><br>
+		<label for="name2" id="name2Label">Teise mängija nimi</label><br>
+		<input type="text" name="name2" id="name2"><br>
+		<div id="errorDiv"></div>
+		<input type="button" id="submitNamesBtn" value="Mängi">
+	</div>
+	<div id="container">
+		<div id="creditsDiv">
+			<p>Robin Kukke</p>
+			<a href="https://github.com/robkukke/2-kodutoo" target="_blank">GitHub</a>
+		</div>
+		<div id="titleDiv">
+			<h1>Trips-traps-trull</h1>
+		</div>
+		<div id="fieldDiv">
+			<div id="placeholderDiv"></div>
+			<table>
+				<tr>
+					<td colspan="3"></td>
+				</tr>
+				<tr>
+					<td>
+						<button class="btn1 default"></button>
+					</td>
+					<td>
+						<button class="btn2 default"></button>
+					</td>
+					<td>
+						<button class="btn3 default"></button>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<button class="btn4 default"></button>
+					</td>
+					<td>
+						<button class="btn5 default"></button>
+					</td>
+					<td>
+						<button class="btn6 default"></button>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<button class="btn7 default"></button>
+					</td>
+					<td>
+						<button class="btn8 default"></button>
+					</td>
+					<td>
+						<button class="btn9 default"></button>
+					</td>
+				</tr>
+			</table>
+			<div id="resultsDiv">
+				<h2>5 viimast mängu</h2>
+			</div>
+		</div>
+		<div id="newGameDiv">
+			<input type="button" id="newGameBtn" value="Uus mäng">
+		</div>
+		<div id="displayNamesDiv"></div>
+		<div id="displayWinnerDiv"></div>
+	</div>
+</body>
+</html>

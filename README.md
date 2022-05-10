@@ -1,28 +1,30 @@
 # 2-kodutoo
 
-2. kodutöö Eesrakenduste arendamises.
+## Autor
 
-## Tähtaeg 07.05.2022 23:59
+Robin Kukke
 
-Kujunda ja loo ise lihtne mäng. 
+## Ekraanipilt
 
-## Nõuded
+![alt text](https://github.com/robkukke/2-kodutoo/blob/main/images/1.png?raw=true)
 
-1. Mäng töötab.
-1. Mäng on tehtud jQuery-ga. 
-1. Mäng on objektorienteeritud (klassides) ja kasutatud on AJAX-it. 
-1. Mäng on originaalne ning kasutajaliides on maitsekalt kujundatud kasutades CSS-i - peab olema ise kirjutatud. 
-1. Autori ees- ja perenimi on lehel välja toodud
-1. Lehel on viide rakenduse repositooriumile
-1. `README.md` failis on välja toodud autori nimi, ekraanipilt rakendusest ja kirjeldatud funktsionaalsus
-1. Kui kasutatud on koodi mujalt, siis sellel on viidatud. 
+## Funktsionaalsus
 
-## Mõned ideed (lihtsalt, et mõte hakkaks jooksma)
+Trips-traps-trull:
+* 2 mängijat, enne alustamist tuleb sisestada nimed
+* Võiduruudud muutuvad roheliseks, viigi korral muutub kogu ruudustik kollaseks
+* Ruudustiku all oleva nupu vajutamisel saab alustada uut mängu (nii mängu keskel kui pärast võitu/viiki)
+* "Uue mängu" nupu all kuvatakse kelle kord hetkel on, mängu lõppedes asendub võitja/viigi teavitusega
+* Tulemuste tabelis kuvatakse viie viimase mängu tulemused (alt üles)
 
-* Ussimäng
-* Cookie clicker
-* Erinevad arvutamismängud
-* 2048
-**
+## Kasutatud koodinäited
 
-Võimalik saada - 25 punkti
+Üldine idee ja põhi (õpetusest võetud ideed olid nuppude kasutamine tabelis ja võitva rea värvimine):
+* https://www.geeksforgeeks.org/create-a-tic-tac-toe-game-using-jquery/
+* tunnis läbi tehtud näited
+
+CSS-iga nupule SVG pildi lisamine:
+* https://stackoverflow.com/a/49997808
+
+Sõnes jQuery-ga tühikute asendamine:
+* https://stackoverflow.com/a/4932918
