@@ -1,28 +1,23 @@
-# 2-kodutoo
-
+# 1-kodutoo
+# Autor: Kristjan Tamm
 2. kodutöö Eesrakenduste arendamises.
 
-## Tähtaeg 07.05.2022 23:59
+## Kirjeldus
+Pong on lauatennise teemaline videomäng, millel on lihtne kahemõõtmeline graafika.
 
-Kujunda ja loo ise lihtne mäng. 
+Mäng on tehtud jQuery-ga, objektorienteeritud ja kasutatud on AJAX-it. 
+Kuvatakse mõlema mängija saadud punktid.
+Salvestamiseks on kasutatud õppetööga loodud funktsioone.
+Mängude tulemused salvestatakse ja kuvatakse välja viie viimase mängu tulemused, nendest eelnevate mängude tulemused kustutakse andmebaasist, et säästa andmemahtu.
+###
+Mäng on mõeldud kahekesi mängimiseks.
+###
+Vasakpoolse mängijaga liikumine:
+W - liigub üles,
+S - liigub alla
+###
+Parempoolse mängija liikumine:
+Nool üles - liigub üles,
+Nool alla - liigub alla
 
-## Nõuded
-
-1. Mäng töötab.
-1. Mäng on tehtud jQuery-ga. 
-1. Mäng on objektorienteeritud (klassides) ja kasutatud on AJAX-it. 
-1. Mäng on originaalne ning kasutajaliides on maitsekalt kujundatud kasutades CSS-i - peab olema ise kirjutatud. 
-1. Autori ees- ja perenimi on lehel välja toodud
-1. Lehel on viide rakenduse repositooriumile
-1. `README.md` failis on välja toodud autori nimi, ekraanipilt rakendusest ja kirjeldatud funktsionaalsus
-1. Kui kasutatud on koodi mujalt, siis sellel on viidatud. 
-
-## Mõned ideed (lihtsalt, et mõte hakkaks jooksma)
-
-* Ussimäng
-* Cookie clicker
-* Erinevad arvutamismängud
-* 2048
-**
-
-Võimalik saada - 25 punkti
+![image](https://user-images.githubusercontent.com/90192493/167654744-f1ccd74d-ccf0-49ab-812b-4de80d3b2eff.png)
