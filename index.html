@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="App.js"></script>
+    <style>
+        .gridcontainer{
+            display: flex;
+            flex-wrap: wrap;
+            background-color: orange;
+            margin-right: 500px;
+            margin-left: 500px;
+        }
+        .element{
+            flex: 1 0 21%;
+            margin: 5px;
+            height: 100px;
+            width: 100px;
+            background-color: rgb(255, 223, 223);
+            text-align: center;
+            font-size: 50px;
+            padding-top: 50px;
+            border-radius: 1px;
+            border-color:black;
+            border-style: solid;
+            
+            
+        }
+
+        #together{
+            border-style: solid;
+            border-radius: 1px;
+        }
+
+    </style>
+    <title>2048</title>
+</head>
+<body>
+    <div id="together">
+        <p>Autor: Andres Sikka</p>
+        <p>https://github.com/andressikka/2-kodutoo</p>
+        <table>
+            <tr>
+                <td>
+                    <h3 id="highScore">High score: 0</h3>
+                </td>
+                <td>
+                    <div id="2048"></div>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+</body>
+</html>
