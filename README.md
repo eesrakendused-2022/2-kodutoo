@@ -1,6 +1,6 @@
 # 2-kodutoo
 
-2. kodutööks tegin laevade pommitamise mängu.
+Laevade pommitamine ühele mängijale.
 http://greeny.cs.tlu.ee/~marrun/2022/ERP/2-kodutoo/
 
 ## Funktsionaalsus
