@@ -15,17 +15,18 @@ class Game{
 		this.endTime = 0;
 		this.time = 0;
 		this.loadResults();
+		this.getName();
 		//this.showShips();
     }
 	
 	loadResults(){
         $.get("results.txt", (data) => {
             let content = JSON.parse(data).content;
-            console.log(content);
             this.results = content;
-            /* localStorage.setItem('score', JSON.stringify(content)); */
         });
-		
+    }
+	
+	getName(){
 		$('#submitName').click(()=>{
 			this.name= $('#nameValue').val();
 			if (this.name){
@@ -36,11 +37,13 @@ class Game{
 				$('#nameError').show();
 			}	
 		})
-
-		
-    }
+	}
 	
 	startGame(){
+		$('#newGame').off("click");
+		$('#newGame').hide();
+		$("#notification").text("");
+		this.loadResults();
 		this.clearBoard();
 		this.drawBoats();
         this.startTime = performance.now();
@@ -49,9 +52,11 @@ class Game{
     }
 	
 	clearBoard(){
-		for(let i=0;i<12;i++){
-			for(let j=0;j<12;j++){			
-				this.board[i][j]=0;
+		
+		this.board = Array.from(Array(12), _ => Array(12).fill(0));
+		
+		for(let i=0;i<10;i++){
+			for(let j=0;j<10;j++){				
 				$("#"+this.returnID(i, j)).css("background-color","white");
 			}
 		}
@@ -78,17 +83,11 @@ class Game{
 
         this.results.sort((a, b) =>  b.lives - a.lives ||  parseFloat(a.time) - parseFloat(b.time));	
 
-        /* localStorage.setItem('score', JSON.stringify(this.results)); */
-
         $.post('server.php', {save: this.results}).done(function(){
             console.log('Success');
         }).fail(function(){
             alert('FAIL');
-        }).always(
-            function(){
-                console.log('Tegime midagi AJAXiga');
-            }
-        )
+        })
 
         this.showResults();
     }
@@ -112,7 +111,8 @@ class Game{
 		for(let i=0;i<10;i++){
 			for(let j=0;j<10;j++){			
 				/* $("#"+this.returnID(i, j)).click(()=>{this.checkHit(i, j)}); */
-				$("#"+this.returnID(i, j)).on("click", ()=>{this.checkHit(i, j)});
+				/* $("#"+this.returnID(i, j)).on("click", ()=>{this.checkHit(i, j)}); */
+				$("#"+this.returnID(i, j)).one("click", ()=>{this.checkHit(i, j)});
 			}
 		}
 	}
@@ -132,7 +132,9 @@ class Game{
 			$("#"+this.returnID(x, y)).css("background-color","pink");
 			
 			$("#notification").text("Möödas! Kaotasid ühe elu");
+			console.log(this.lives);
 			this.lives--;
+			console.log(this.lives);
 			$("#livesNum").text(this.lives);
 			
 			if(this.lives==0){
@@ -152,7 +154,6 @@ class Game{
 	}
 
 	checkIfSunken(x, y){
-		//let sunken = false;
 		let endCounter = 0;
 		let length = 1;
 
@@ -257,7 +258,6 @@ class Game{
 		}
 	}			
 	
-
 	markSquareAsHit(x, y){
 		$("#"+this.returnID(x-1, y-1)).css("background-color","black");
 	}
@@ -579,4 +579,4 @@ class Game{
 	
 }
 
-let game = new Game;
+let game = new Game();

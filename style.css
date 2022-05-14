@@ -109,7 +109,7 @@ td:first-of-type {
 	font-weight: bold;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
 	.container {
 		display: grid;
 		grid-template-columns: auto 330px auto;
