@@ -1,28 +1,26 @@
 # 2-kodutoo
 
-2. kodutöö Eesrakenduste arendamises.
+Kert Lillenberk
+Mälumäng
 
-## Tähtaeg 07.05.2022 23:59
-
-Kujunda ja loo ise lihtne mäng. 
-
-## Nõuded
+## Funktsionaalsus
 
 1. Mäng töötab.
 1. Mäng on tehtud jQuery-ga. 
-1. Mäng on objektorienteeritud (klassides) ja kasutatud on AJAX-it. 
-1. Mäng on originaalne ning kasutajaliides on maitsekalt kujundatud kasutades CSS-i - peab olema ise kirjutatud. 
-1. Autori ees- ja perenimi on lehel välja toodud
-1. Lehel on viide rakenduse repositooriumile
-1. `README.md` failis on välja toodud autori nimi, ekraanipilt rakendusest ja kirjeldatud funktsionaalsus
-1. Kui kasutatud on koodi mujalt, siis sellel on viidatud. 
+1. Mäng on objektorienteeritud ja kasutatud on AJAX-it. 
+1. Suvalises järjekorras kastide kuvamine. Ükshaaval kastide "kuvamine" osutus esialgu raskeks, kuid abi sain viidatud videost.
+1. Mäng kontrollib kelle käik on, ehk kui arvuti kuvab kasutajale järjekorda, siis kasutaja ei saa samal ajal klõpsata.
+1. Kasutaja sisestuse lugemine ja vastavuse kontrollimine.
+1. Tulemuse salvestamine.
 
-## Mõned ideed (lihtsalt, et mõte hakkaks jooksma)
+## Kuvatõmmised
 
-* Ussimäng
-* Cookie clicker
-* Erinevad arvutamismängud
-* 2048
-**
+Alustamine:
+![image](https://user-images.githubusercontent.com/90192525/168497951-abf681a2-0abe-457e-8ad2-cb60b55302e9.png)
 
-Võimalik saada - 25 punkti
+Mäng:
+![image](https://user-images.githubusercontent.com/90192525/168497971-843a6dcb-b7b3-423b-be02-19e9025aa6b3.png)
+
+## Kasutatud materjal
+
+https://www.youtube.com/watch?v=W0MxUHlZo6U
