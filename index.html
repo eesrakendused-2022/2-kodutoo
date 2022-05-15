@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="memoryGame.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Mälumäng</title>
+</head>
+<body>
+    <div id="main">
+        <div id="intro">
+            <h1>Mälumäng</h1>
+            <p>Sinu ülesandeks on näidatud järjekorras vajutusi korrata</p>
+            <p>Mängu alustamiseks vajuta starti.</p>
+            <label for="nameValue">Palun sisesta oma nimi: </label>
+            <input type="text" id="nameValue">
+            <br>
+            <button id="start">Alusta</button>
+        </div>
+        <div id="score" class="hidden"></div>
+        <div id="game" class="hidden">
+            <div id="yellow" class="box"></div>
+            <div id="green" class="box"></div>
+            <div id="red" class="box"></div>
+            <div id="blue" class="box"></div>
+        </div>
+        <button id="play" class="hidden">Start</button>
+        <div id="results"></div>
+    </div>
+    <footer>
+        <p>Autor: Kert Lillenberk</p>
+        <p><a href="https://github.com/klillenb/2-kodutoo">Githubi repo</a></p>
+    </footer>
+</body>
+</html>
