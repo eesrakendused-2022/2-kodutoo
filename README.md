@@ -1,7 +1,8 @@
 # 2-kodutoo
 
 Kert Lillenberk
-Mälumäng
+[Mälumäng](http://www.tlu.ee/~klillenb/kodutoo-2/)
+
 
 ## Funktsionaalsus
 
