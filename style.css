@@ -1,0 +1,99 @@
+html {
+    max-width: 100%;
+    max-height: 100%;
+    background-color: lightslategrey;
+    margin-left: 20px;
+}
+
+#main {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+#score {
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+#game {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+    max-width: 100%;
+    max-height: 100%;
+    flex-wrap: wrap;
+    /*padding: 0 100px 0 100px;*/
+}
+
+#play {
+    width: 50px;
+    display: block;
+    margin: 0 auto;
+}
+
+.box {
+    flex: 50%;
+    max-width: 50px;
+    height: 50px;
+    order: 2;
+    border: 5px solid black;
+    border-radius: 12px;
+    margin: 20px;
+}
+
+.box:hover {
+    cursor: pointer;
+    border: 5px solid white;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.show {
+    background-color: lightblue !important;
+}
+
+.selected {
+    background-color: lightseagreen;
+}
+
+.incorrect {
+    background-color: red;
+}
+
+#yellow {
+    background-color: yellow;
+}
+
+#green {
+    background-color: green;
+}
+
+#red {
+    background-color: red;
+}
+
+#blue {
+    background-color: blue;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+#start {
+    margin-top: 10px;
+}
