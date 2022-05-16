@@ -18,8 +18,8 @@ randomWord();
 
 function wordSpaces() {
     for (let i = 0; i < word.length; i++) {
-      $(".word-spaces > tbody > tr").append('<td data-index='+ i + '>' + word[i] + '</td>')
-        let boxIndex = $(this).data('index');
+      $(".word-spaces > tbody > tr").append('<td data-index=' + word[i] +'>' + word[i] + '</td>')
+        let boxIndex = $(this).data('data-index');
         console.log(boxIndex);
     }
 }
@@ -30,12 +30,11 @@ function startGame() {
         let index = $(this).data('index');
         console.log(index);
         for (let j = 0; j < word.length; j++){
-            console.log(word[j]);
             if (word[j] == index){
                 $('.word-spaces td').css('color','black');
                 $(this).css('background-color', 'green');
                 $(this).prop('disabled', true);
-                alert(index);
+                //alert(index);
                 rightGuesses++; 
                 console.log(rightGuesses);
                 break;
@@ -44,18 +43,20 @@ function startGame() {
                 $(this).prop('disabled', true);
                 wrongGuesses++;
                 $("#lives").html(wrongGuesses);
+                break;
                 
             }
         }
-
+        endGame();
     });
+    
 }
 
 
 function endGame(){
     if(wrongGuesses >= 6 || rightGuesses == word.length){
-    $("body").css("background-color", "#ff4500");
     $("#status").html("M2ng on l2bi");
+    $('.btn').prop('disabled', true);
     saveResults();
     }
 }
@@ -92,7 +93,7 @@ function saveResults(){
 
     showResults();
 }
-saveResults();
+
 
 function showResults(){
     $('#results').html("");
