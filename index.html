@@ -5,28 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="hangman.js" defer></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script src="flappybird.js" defer></script>
-    <script src="flappybird2.js" defer></script>
-    <title>FlappyBird</title>
+    <title>Hangman</title>
 </head>
-<div id="author">
-    <div id="name">Laura Aruksaar</div>
-    <div id="link"><a href="https://github.com/lauraaruksaar/2-kodutoo/tree/main">Github</a></div>
-</div>
 <body>
-    <div id="container">
-        <div id="bird"></div>
-        <div id="pole1" class="pole"></div>
-        <div id="pole2" class="pole"></div>
-    </div>
+    <div id="info">Mangu info</div>
+
+    <table class="word-spaces">
+        <caption>Sona on: </caption>
+        <tbody>
+          <tr></tr>
+        </tbody>
+    </table>
     
-    <div id="info">
-        <p><b>Skoor: </b><span id="score">0</span></p>
-        <p><b>Kiirus: </b><span id="speed">10</span></p>
+    <div id="container">
+        <div id="score">Kaotatud elud: <span id="lives">5</span></div>
+        <div class="keyboard">
+            <button id="a">A</button>
+            <button id="b">B</button>
+            <button id="c">C</button>
+            <button id="d">D</button>
+            <button id="e">E</button>
+            <button id="f">F</button>
+            <button id="g">G</button>
+            <button id="h">H</button>
+            <button id="i">I</button>
+            <button id="j">J</button>
+            <button id="k">K</button>
+            <button id="l">L</button>
+            <button id="m">M</button>
+            <button id="n">N</button>
+            <button id="o">O</button>
+            <button id="p">P</button>
+            <button id="r">R</button>
+            <button id="s">S</button>
+            <button id="t">T</button>
+            <button id="u">U</button>
+            <button id="v">V</button>
+        </div>
     </div>
     <div id="results">Tulemused</div>
-
-    <button id="restart">Alusta mängu uuesti</button>
 </body>
 </html>
