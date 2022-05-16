@@ -11,3 +11,4 @@
 
 ## Mängu kirjeldus (funktsionaalsused)
 Tegemist on sõnamänguga "poomine". 
+Link mängule: http://greeny.cs.tlu.ee/~lauaru/eesrakendused/kodutoo2/ 
