@@ -1,10 +1,11 @@
-let words = ["kass", "koer", "taevas", "arvuti", "pliiats", "vesi"];
+let words = ["kass", "koer", "taevas", "arvuti", "pliiats", "vesi", "kuulilennutunneliteeluuk"];
 let word = [];
 let buttons = [];
 let wrongGuesses= 0;
 let rightGuesses= 0;
 let gameOver = false;
 let results = [];
+startGame();
 
 function randomWord(){
     let random = Math.floor(Math.random() * words.length);
@@ -17,28 +18,45 @@ randomWord();
 
 function wordSpaces() {
     for (let i = 0; i < word.length; i++) {
-      $(".word-spaces > tbody > tr").append('<td data-idx=i>' + word[i] + '</td>')
+      $(".word-spaces > tbody > tr").append('<td data-index='+ i + '>' + word[i] + '</td>')
+        let boxIndex = $(this).data('index');
+        console.log(boxIndex);
     }
 }
 wordSpaces();
 
+function startGame() {
+    $('.btn').click(function(){
+        let index = $(this).data('index');
+        console.log(index);
+        for (let j = 0; j < word.length; j++){
+            console.log(word[j]);
+            if (word[j] == index){
+                $('.word-spaces td').css('color','black');
+                $(this).css('background-color', 'green');
+                $(this).prop('disabled', true);
+                alert(index);
+                rightGuesses++; 
+                console.log(rightGuesses);
+                break;
+            } else {
+                $(this).css('background-color', 'red');
+                $(this).prop('disabled', true);
+                wrongGuesses++;
+                $("#lives").html(wrongGuesses);
+                
+            }
+        }
 
-$("button").click(function() {
-    for (let j = 0; j < word.length; j++){
-        console.log(word[j]);
-        if (word[j] == this.id){
-            $('.word-spaces td').css('color','black');
-            alert(this.id);
-            rightGuesses++; 
-            break;
-        } 
-    }
- 
-});
+    });
+}
+
 
 function endGame(){
     if(wrongGuesses >= 6 || rightGuesses == word.length){
     $("body").css("background-color", "#ff4500");
+    $("#status").html("M2ng on l2bi");
+    saveResults();
     }
 }
 
