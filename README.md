@@ -13,4 +13,4 @@
 Tegemist on sõnamänguga "poomine". 
 Link mängule: http://greeny.cs.tlu.ee/~lauaru/eesrakendused/kodutoo2/ 
 
-<img width="960" alt="image" src="https://user-images.githubusercontent.com/90316827/168700355-93979461-0635-4b58-80a6-498bf555a6b7.png">
+<img width="960" alt="image" src="https://user-images.githubusercontent.com/90316827/168700695-95c25c93-b379-4058-8574-e4211bae131f.png">
