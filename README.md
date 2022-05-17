@@ -9,7 +9,7 @@
 7. README.md failis on välja toodud autori nimi, ekraanipilt rakendusest ja kirjeldatud funktsionaalsus
 8. Kui kasutatud on koodi mujalt, siis sellel on viidatud.
 
-## Mängu kirjeldus (funktsionaalsused)
+## Mängu kirjeldus (funktsionaalsus)
 Tegemist on sõnamänguga "poomine". Mängu eesmärk on arvata suvaliselt genereeritud sõna tähed. Kui arvad 6 korda valesti kaotad mängu. 
  
 
