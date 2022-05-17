@@ -10,38 +10,34 @@
     <title>Arvutamine</title>
 </head>
 <body>
-    <!-- <div id="name">
-        <label for="nameValue">Palun, sisesta oma nimi</label>
+    <div id="name">
+        <h1>Peast arvutamise mäng</h1>
+        <label for="nameValue">Palun sisesta oma nimi</label>
         <input type="text" id="nameValue">
+        <label >Palun vali raskusaste</label>
+        <input type="radio" id="difficultyLevelEasy" value="Kerge" name="difficultyLevel" class="easy">
+        <label for="difficultyLevelEasy" class="easy">Kerge</label>
+        <input type="radio" id="difficultyLevelHard" value="Raske" name="difficultyLevel">
+        <label for="difficultyLevelHard">Raske</label>
         <input type="button" value="Mängi" id="submitName">
-    </div> -->
-    <div id="info">Arvutamise mäng</div>
+    </div> 
+    <div id="info">
+        <h1>Arvutamise mäng</h1></div>
     <div id="container">
-        <div id="exercises">Siia kuvame ülesanded</div>
-        <!--<div id="score">Konkreetse mängu tulemus</div>-->
-        <!--<button id="generate" >Kontrolli vastuseid</button>-->
-        <div id="startNew">Mängu uuesti alustamiseks vajata nupule "R".</div>
-        <div id=stats></div>
+        <div id="exercises">
+            <div id="exercise" class="exercise"></div>
+           <input id="answerId" class="exercise" autofocus>
+        </div>
+
+        
+        <div id="startNew">
+            <input type="button" value="Alusta uut mängu" id="startNewBtn">
+        </div>
+        
     </div>
 
-    <hr>
-        <!-------- <button id="generate" onclick="generate_exercises()">Generate Exercises</button>--
-        <hr/>
-        <div id="exercises"></div>-->
+    <div id="results" >Tulemused</div>
 
-    <div id="results">Tulemused</div>
-
-
-
-
-    <!--<h3>Statistics</h3>
-        <h4 id=level></h4>
-        <h4 id=experience></h4>
-        <div id=stats></div>
-        <hr>
-        -------- <button id="generate" onclick="generate_exercises()">Generate Exercises</button>--
-        <hr/>
-        <div id="exercises"></div>-->
     
 </body>
 </html>
