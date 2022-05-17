@@ -13,7 +13,7 @@ kuvatakse mängu jooksul saadud kõrgeim skoor.
 *Peale mängu lõppu on võimalik vajutada "Alusta mängu uuesti" nupule, mis alustab mängu algusest.
 
 ## Kuvatõmmised
-![screen1](https://user-images.githubusercontent.com/70900314/168818746-0deaee27-97a5-418c-b732-4c159595fda5.jpg)
+![screen1](https://user-images.githubusercontent.com/70900314/168819657-2eba8aa4-42c0-4970-8dcc-8ba0fbc7d74c.jpg)
 ![screen2](https://user-images.githubusercontent.com/70900314/168818754-ceff1fa7-167a-461e-b91c-0d69376ff734.jpg)
 
 ## Kasutatud materjalid
