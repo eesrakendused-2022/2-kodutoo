@@ -54,8 +54,8 @@ function startGame() {
 
 
 function endGame(){
-    if(wrongGuesses >= 6 || rightGuesses == word.length){
-    $("#status").html("M2ng on l2bi");
+    if(wrongGuesses >= 6 || rightGuesses == 1){
+    $("#status").html("Mäng on läbi");
     $('.btn').prop('disabled', true);
     saveResults();
     }
@@ -69,7 +69,7 @@ function loadFromFile(){
         localStorage.setItem('score', JSON.stringify(content));
     }); 
 }
-loadFromFile();
+
 
 function saveResults(){
     let result = {
@@ -102,4 +102,6 @@ function showResults(){
         $('#results').append('<div class="'+ i +'"><div>' + (i+1) + '. ' + results[i].elud + '</div><div> ');
     }
 }
+loadFromFile();
 showResults();
+
