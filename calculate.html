@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="calculate.js" defer></script>
+    <title>Arvutamine</title>
+</head>
+<body>
+    <div id="name">
+        <h1>Peast arvutamise mäng</h1>
+        <label for="nameValue">Palun sisesta oma nimi</label>
+        <input type="text" id="nameValue">
+        <label >Palun vali raskusaste</label>
+        <input type="radio" id="difficultyLevelEasy" value="Kerge" name="difficultyLevel" class="easy">
+        <label for="difficultyLevelEasy" class="easy">Kerge</label>
+        <input type="radio" id="difficultyLevelHard" value="Raske" name="difficultyLevel">
+        <label for="difficultyLevelHard">Raske</label>
+        <input type="button" value="Mängi" id="submitName">
+    </div> 
+    <div id="info">
+        <h1>Arvutamise mäng</h1></div>
+    <div id="container">
+        <div id="exercises">
+            <div id="exercise" class="exercise"></div>
+           <input id="answerId" class="exercise" autofocus>
+        </div>
+
+        
+        <div id="startNew">
+            <input type="button" value="Alusta uut mängu" id="startNewBtn">
+        </div>
+        
+    </div>
+
+    <div id="results" >Tulemused</div>
+
+    
+</body>
+</html>

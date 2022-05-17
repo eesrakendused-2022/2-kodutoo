@@ -1,0 +1,92 @@
+body{
+    margin:0;
+    padding:0;
+}
+
+#container{
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: rgb(108, 132, 211);
+}
+
+h1{
+    color: rgb(175, 162, 245);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.exercise {
+    flex-basis: 70px;
+    height: 40px;
+    margin: 5px;
+}
+
+#answerId{
+    border-radius: 7%;
+}
+
+
+#info{
+    width:100vw;
+    height:20vh;
+    background-color: lightblue;
+    text-align: center;
+}
+
+#results{
+    width:100vw;
+    height:60vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(133, 107, 250);
+    text-align: center;
+}
+
+#results>div{
+    display: flex;
+    justify-content: space-between;
+}
+#results>div>div{
+    width: 33%;
+    text-align: center;
+}
+
+div{
+    font-size: 28px;
+}
+
+#name{
+    position: absolute;
+    width:100vw;
+    height: 100vh;
+    background-color: rgb(133, 240, 109);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+#startNew{
+    display: none;
+    padding: 10px;
+}
+
+
+
+
+#name label{
+    font-size: 1.7em;
+}
+
+#name input{
+    height: 50px;
+    font-size: 38px;
+    min-width: 300px;
+    margin: 10px;
+}
