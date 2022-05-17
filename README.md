@@ -1,6 +1,7 @@
 # 2. Kodutöö
 
 Autor - Morten-Paul Mühlberg
+
 Ussimäng - http://www.tlu.ee/~morten1/ussimang/game.html
 
 ## Funktsionaalsused
