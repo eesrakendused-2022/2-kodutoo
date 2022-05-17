@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+    <script src="./index.js" defer></script>
+    <title>"jump king"</title>
+</head>
+<body>
+    <main>
+        <div class="gameMenu">
+            <h1>Jump King : bog simulator</h1>
+            <p>Siim Kriibi - <a href="https://github.com/siim002/2-kodutoo">GitHub</a></p>
+            <label for="nameInput">name:</label>
+            <input type="text" id="nameInput">
+            <input type="submit" value="play" id="submit">
+        </div>
+        <div class="game">
+            <img src="./bogg.jpeg" width="1000px" height="1000px">
+            <div id="overlay">
+                <h1>Times jumped: <div id="nJump"></div></h1>
+                <h2>Time spent in bog: <div id="timer"><span class="value">0</span> s</div></h2>
+                <input type="button" value="Save game" id="saveGame">
+            </div>
+            <div class="char"></div>
+        </div>
+        <div class="stats">
+            <h3>
+                Top players: <br>
+                1. Forsen: 99999999s
+                <div id="results"></div>
+            </h3>
+        </div>
+    </main>
+</body>
+</html>
