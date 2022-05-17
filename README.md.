@@ -1,0 +1,7 @@
+Autor: Marleene Ristjan
+
+Tegin peast arvutamise mängu. Mängija sisestab oma nime ning valib soovitud raskusastme (kerge/raske).
+Kui valitakse lihtsam raskusaste, siis kuvatakse mängijale liitmistehted, kui raske, siis korrutamistehted.
+
+Mängu lõpus näidatakse mängijale tulemusi ning on võimalus mängu uuesti alustada.
+
