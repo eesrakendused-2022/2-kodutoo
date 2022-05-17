@@ -5,12 +5,12 @@ Ussimäng - http://www.tlu.ee/~morten1/ussimang/game.html
 
 ## Funktsionaalsused
 
-*Mängijal on võimalik noolklahvide abil ussiga liikuda.
-*Uss muutub toitu süües aina pikemaks.
-*Mängul on olemas luger, mis ütleb kui palju toitu on mängija ussiga jõudnud süüa.
-*Kui mängija liigub ussi peaga kas ussi keha või mänguplatsi piiri peale, lõpetatakse mäng ning 
+* Mängijal on võimalik noolklahvide abil ussiga liikuda.
+* Uss muutub toitu süües aina pikemaks.
+* Mängul on olemas luger, mis ütleb kui palju toitu on mängija ussiga jõudnud süüa.
+* Kui mängija liigub ussi peaga kas ussi keha või mänguplatsi piiri peale, lõpetatakse mäng ning 
 kuvatakse mängu jooksul saadud kõrgeim skoor.
-*Peale mängu lõppu on võimalik vajutada "Alusta mängu uuesti" nupule, mis alustab mängu algusest.
+* Peale mängu lõppu on võimalik vajutada "Alusta mängu uuesti" nupule, mis alustab mängu algusest.
 
 ## Kuvatõmmised
 ![screen1](https://user-images.githubusercontent.com/70900314/168819657-2eba8aa4-42c0-4970-8dcc-8ba0fbc7d74c.jpg)
