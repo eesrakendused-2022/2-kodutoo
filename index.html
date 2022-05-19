@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="snake.css">
+    <script src="snake.js" defer></script>
+    <title>Snake game</title>
+</head>
+<body>
+    <div class="container">
+        <div class="modal" id="startGameModal">
+            <div class="modal-content">
+                <h1>Start game</h1>
+                <div class="input-container">
+                    <label for="nameInput">Your name:</label>
+                    <input type="text" id="nameInput">
+                </div>
+                <button id="playGame">Play</button>
+            </div>
+        </div>
+        <header>Lisett-Marleen Tänav</header>
+        <h1>Snake game</h1>
+        
+        <canvas id="board" width="600" height="600"></canvas>
+        <div id="score"></div>
+    </div>
+    <div class="modal" id="gameOverModal">
+        <div class="modal-content">
+            <h1>Game over</h1>
+            <p id="gameOverMessage"></p>
+            <button href="snake.html" id="restart">Play again</button>
+        </div>
+    </div>
+    
+</body>
+</html> 
