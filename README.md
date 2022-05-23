@@ -10,8 +10,10 @@
 8. Kui kasutatud on koodi mujalt, siis sellel on viidatud.
 
 ## Mängu kirjeldus (funktsionaalsus)
-Tegemist on sõnamänguga "poomine". Mängu eesmärk on arvata suvaliselt genereeritud sõna tähed. Kui arvad 6 korda valesti kaotad mängu. 
+Tegemist on sõnamänguga "poomine". Mängu eesmärk on arvata juhuslikult genereeritud sõna tähed. Kui arvad 6 korda valesti kaotad mängu. 
  
 
-<img width="960" alt="image" src="https://user-images.githubusercontent.com/90316827/168700695-95c25c93-b379-4058-8574-e4211bae131f.png">
+<img width="680" alt="image" src="https://user-images.githubusercontent.com/90316827/169722053-c7aed1fd-27c5-4b3b-b258-73518c4b713a.png">
 Link mängule: http://greeny.cs.tlu.ee/~lauaru/eesrakendused/proov2/
+
+Kasutasin ka koodi siit: https://codepen.io/jramos5/pen/oxPaJL
