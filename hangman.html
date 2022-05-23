@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hangman.css">
+    <script src="hangman.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <title>Hangman</title>
+</head>
+<p id="author">Laura Aruksaar | <a href="https://github.com/lauraaruksaar/2-kodutoo">Github</a></p>
+<body>
+    <div class="container-fluid" id="main-container">
+      <h2 id="game-title">Tegemist on sõnamänguga "poomine". Mängu eesmärk on arvata ära juhuslikult genereeritud sõna. Kui arvad 6 korda valesti kaotad mängu. Mängu alustamiseks vajuta start</h2>
+      <div>
+        <h1 class="draw"></h1>
+      </div>
+
+      <div class="titulo" id="word"><span id="word1">word</span></div>
+      <br>
+      
+      <button id="btn1" style="width: 100px;" >Start</button>
+      <button id="btn2" style="width: 100px;">Restart</button>
+      
+      <div class="keyboard">
+        <button class="btn" data-index="a">A</button>
+        <button class="btn" data-index="b">B</button>
+        <button class="btn" data-index="c">C</button>
+        <button class="btn" data-index="d">D</button>
+        <button class="btn" data-index="e">E</button>
+        <button class="btn" data-index="f">F</button>
+        <button class="btn" data-index="g">G</button>
+        <button class="btn" data-index="h">H</button>
+        <button class="btn" data-index="i">I</button>
+        <button class="btn" data-index="j">J</button>
+        <button class="btn" data-index="k">K</button>
+        <button class="btn" data-index="l">L</button>
+        <button class="btn" data-index="m">M</button>
+        <button class="btn" data-index="n">N</button>
+        <button class="btn" data-index="o">O</button>
+        <button class="btn" data-index="p">P</button>
+        <button class="btn" data-index="r">R</button>
+        <button class="btn" data-index="s">S</button>
+        <button class="btn" data-index="t">T</button>
+        <button class="btn" data-index="u">U</button>
+        <button class="btn" data-index="v">V</button>
+    </div>
+    <br />
+    <br />
+    </div>
+    <div id="results">Tulemused</div>
+  </body>

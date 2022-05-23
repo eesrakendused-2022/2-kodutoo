@@ -1,0 +1,59 @@
+body {
+  font: 12px 'Verdana';
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5%;
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+#main-container {
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+	background-color: #eee;
+	background-size: cover;
+  padding: 10px;
+}
+
+#draw {
+  font-size: 3em;
+  margin: 0px;
+}
+
+.titulo{
+  color:  black;
+  font-size: 50px;
+  text-align:center;
+}
+
+form{
+  text-align: center;
+  padding-top:400px;
+}
+
+button {
+  height: 40px;
+  width: 40px;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border: 0px;
+  margin: 3px;
+  border-radius: 10px;
+}
+
+button:hover {
+ background: rgb(56, 53, 53);
+}
+
+div.keyboard{
+  position: inherit;
+  bottom: 100px;
+  margin-top: 70px;
+  margin: auto;
+  max-width:450px;
+}
+
+
