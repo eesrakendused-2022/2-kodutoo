@@ -56,4 +56,10 @@ div.keyboard{
   max-width:450px;
 }
 
+#results{
+  color:  black;
+  font-size: 12px;
+  text-align:center;
+}
+
 

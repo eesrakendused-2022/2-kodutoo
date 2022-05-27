@@ -8,7 +8,7 @@
         $object->last_modified = time();
         $object->content = $stringToSave;
         $jsonString = json_encode($object);
-        file_put_contents("database.txt", $jsonString);
+        file_put_contents("database2.txt", $jsonString);
     }
 
 ?>

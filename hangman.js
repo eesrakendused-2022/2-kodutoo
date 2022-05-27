@@ -1,33 +1,34 @@
 $(document).ready(function() {
-
+    //let playerName = prompt('Palun sisesta oma nimi');
     let letter = "";
-    let wordLength;
     let word = "";
-    let lettersSplit = [];
+    //let lettersSplit = [];
     let uppercase = "";
     let numToMatch = 0;
     let stringword = "";
     let wrong = 6;
-    let words = ["kass", "koer", "taevas", "arvuti", "pliiats", "vesi", "kuulilennutunneliteeluuk"];
+    let words = ["kass", "koer", "taevas", "arvuti", "pliiats", "vesi", "kuulilennutunneliteeluuk", "raamat", "tool"];
     let results = [];
+    let random;
+    showResults();
+    loadFromFile();
   
     $(".titulo").empty();
-    //$(".draw").text("");
     $("button#btn1").attr("disabled", false);
     $(".draw").text("Elusid jäänud " + wrong);
     $(".keyboard > button").attr("disabled", true);
-    $('#results').hide();
-    loadFromFile();
-    
 
     function loadFromFile(){
-        $.get("database.txt", (data) => {
+        $.get("database2.txt", (data) => {
             let content = JSON.parse(data).content;
             console.log(content);
             results = content;
+            console.log(results);
             localStorage.setItem('score', JSON.stringify(content));
         }); 
+        showResults();
     }
+    
 
     function setCharAt(str, index, chr) {
         if (index > str.length - 1) return str;
@@ -36,39 +37,42 @@ $(document).ready(function() {
 
       //start
     $("#btn1").click(function() {
-        let random = Math.floor(Math.random() * words.length);
+        random = Math.floor(Math.random() * words.length);
         console.log(random);
         word = words[random];
         $("button").attr("disabled", false);
         lettersSplit = word.split("");
-        wordLength = word.length;
         //console.log(wordLength);
         console.log(word);
         uppercase = word.toUpperCase();
         let cont = 0;
-        while (cont < wordLength) {
+        while (cont < word.length) {
             if (word.charAt(cont) == " ") {
                 $("#word").append(" ");
             } else {
                 $("#word").append("-");
             }
             cont++;
-        }
-        word = "";
+        };
+        //word = "";
     });
 
       //restart nupp
     $("#btn2").click(function() {
-        $(".titulo").empty();
-        $(".draw").empty();
+        wrong = 6;
         word = "";
         uppercase = "";
         lettersSplit = [];
+
+        letter = "";
+        numToMatch = 0;
+        stringword = "";
+
+        $(".titulo").empty();
+        $(".draw").text("Elusid jäänud " + wrong);
         $(".keyboard > button").css('background-color', 'black');
-        wrong = 6;
         $(".keyboard > button").attr("disabled", true);
         $("button#btn1").attr("disabled", false);
-        saveResults();
     });
 
     
@@ -95,6 +99,7 @@ $(document).ready(function() {
                 $("button").attr("disabled", true);
                 $("button#btn1").attr("disabled", false);
                 $("button#btn2").attr("disabled", false);
+                saveResults();
             }
             $(this).css('background-color', 'green');;
         } else {
@@ -105,15 +110,18 @@ $(document).ready(function() {
                 wrong = 0;
                 $(".draw").text("Kaotasid");
                 if(($(".draw").text()) == "Kaotasid"){
-                    $("#word").replaceWith("<p class='titulo'>" + uppercase + "</p>");
+                    //$("#word").replaceWith("<p class='titulo'>" + uppercase + "</p>");
+                    $("#word").empty();
+                    $("#word").append(uppercase);
                     $("button").attr("disabled", true);
                     $("button#btn1").attr("disabled", false);
                     $("button#btn2").attr("disabled", false);
+                    saveResults();
                 }
             }
         }
     }); 
-
+   
     function saveResults(){
         let result = {
             elud: wrong
@@ -124,7 +132,7 @@ $(document).ready(function() {
     
             localStorage.setItem('score', JSON.stringify(results));
     
-            $.post('server.php', {save: results}).done(function(){
+            $.post('server2.php', {save: results}).done(function(){
                 console.log('Success');
             }).fail(function(){
                 alert('FAIL');
@@ -135,13 +143,12 @@ $(document).ready(function() {
             )
             showResults();
     }
-    
+
     function showResults(){
         $('#results').html("");
         for(let i = 0; i < results.length; i++){
             if(i === 10){break;}
-            $('#results').append('<div class="'+ i +'"><div>' + (i+1) + '. ' + results[i].elud + '</div><div> ');
+            $('#results').append('<div class="'+ i +'"><div>' + (i+1) + '. ' + results[i].elud + '</div><div>');
         }
     }
-    showResults();
 });
