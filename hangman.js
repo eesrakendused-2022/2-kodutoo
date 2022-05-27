@@ -1,8 +1,7 @@
 $(document).ready(function() {
-    //let playerName = prompt('Palun sisesta oma nimi');
+    let playerName = prompt('Palun sisesta oma nimi');
     let letter = "";
     let word = "";
-    //let lettersSplit = [];
     let uppercase = "";
     let numToMatch = 0;
     let stringword = "";
@@ -10,8 +9,9 @@ $(document).ready(function() {
     let words = ["kass", "koer", "taevas", "arvuti", "pliiats", "vesi", "kuulilennutunneliteeluuk", "raamat", "tool"];
     let results = [];
     let random;
-    showResults();
     loadFromFile();
+    showResults();
+    
   
     $(".titulo").empty();
     $("button#btn1").attr("disabled", false);
@@ -54,11 +54,12 @@ $(document).ready(function() {
             }
             cont++;
         };
-        //word = "";
+        
     });
 
       //restart nupp
     $("#btn2").click(function() {
+        playerName = prompt('Palun sisesta oma nimi');
         wrong = 6;
         word = "";
         uppercase = "";
@@ -124,12 +125,11 @@ $(document).ready(function() {
    
     function saveResults(){
         let result = {
-            elud: wrong
+            elud: wrong,
+            nimi: playerName
         }
             results.push(result);
-    
-            results.splice(10, 10);
-    
+
             localStorage.setItem('score', JSON.stringify(results));
     
             $.post('server2.php', {save: results}).done(function(){
@@ -148,7 +148,7 @@ $(document).ready(function() {
         $('#results').html("");
         for(let i = 0; i < results.length; i++){
             if(i === 10){break;}
-            $('#results').append('<div class="'+ i +'"><div>' + (i+1) + '. ' + results[i].elud + '</div><div>');
+            $('#results').append('<div class="'+ i +'"><div>' + (i+1) + '. ' + results[i].nimi + ": " + results[i].elud + '</div><div>');
         }
     }
 });
