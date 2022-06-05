@@ -153,7 +153,7 @@ export default class Engine {
             clearData = "[" + clearData
             clearData = clearData.slice(0, -1)
             clearData = clearData.slice(0, -1)
-            clearData = clearData.slice(0, -1)
+            //clearData = clearData.slice(0, -1)
             clearData = clearData + "]"
             localStorage.setItem('results', clearData)
         })
@@ -163,6 +163,11 @@ export default class Engine {
         this.getDb()
 
         let results = localStorage.getItem('results')
+        if(results == ']'){
+            $('#scoreBoard').append('<div>Be first! :)</div>')
+            return
+        }
+        
         results = JSON.parse(results)
         results.sort(function(a, b){
             return b.content.score - a.content.score
