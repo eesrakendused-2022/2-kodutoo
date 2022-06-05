@@ -1,6 +1,8 @@
 # 2-kodutoo
 
 ## Info
+Demo: http://144.21.35.44/2-kodutoo/game.html
+
 Autor: Vladislav Priske
 
 ![image](https://user-images.githubusercontent.com/55079623/172074649-dd3055af-6680-4828-b8bf-616d1129ed45.png)
