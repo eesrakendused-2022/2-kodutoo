@@ -5,12 +5,10 @@ localStorage.setItem('gameOn',false)
 
 $('#playButton').click(handlePlayGame)
 $('#resetButton').click(handleResetGame)
-// $('#submitScoreButton').click(handleSubmitScore)
 
 function handlePlayGame() {
     localStorage.setItem('gameOn',true)
     localStorage.setItem('score','0')
-    // $('#submitScoreButton').attr('data-disabled', '')
     $('#submitScoreButton').addClass('disabled')
     game.draw()
 }
