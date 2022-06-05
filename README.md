@@ -6,9 +6,9 @@ Autor: Vladislav Priske
 ![image](https://user-images.githubusercontent.com/55079623/172074649-dd3055af-6680-4828-b8bf-616d1129ed45.png)
 
 Funktsionaalsus:
-Kui uss puudutab peaga kas canvase piire või enda keha, siis mäng lõpeb.
-Töötav scoreboard (skooride POST tehtud AJAX-iga läbi php skripti, skooride GET samuti tehtud AJAX-iga).
-Mängija saab ussi liigutada noolklahvide abil.
+1) Kui uss puudutab peaga kas canvase piire või enda keha, siis mäng lõpeb.
+2) Töötav scoreboard (skooride POST tehtud AJAX-iga läbi php skripti, skooride GET samuti tehtud AJAX-iga).
+3) Mängija saab ussi liigutada noolklahvide abil.
 
 ## Nõuded
 
