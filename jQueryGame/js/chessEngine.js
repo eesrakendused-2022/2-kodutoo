@@ -815,6 +815,7 @@ class chessEngine2{
                 console.log(clickArea);
                 if(engine.highlighted.includes(clickArea)){
                     engine.didMove = true;
+                    console.log(clickArea+". Salvestame tekstifaili!");
                     console.log("sinna saab minna")
                     engine.movePawn(engine.highlightedPiece, clickArea);
                     engine.highlightedPiece = "";
