@@ -1,28 +1,13 @@
-# 2-kodutoo
+Tegemist on lihtsalt klassikalise Trips-Traps-Trulli mänguga.
 
-2. kodutöö Eesrakenduste arendamises.
+Nagu ikka on mängu põhimõtteks kahe erineva osapoole (Player X ja Player O) vahel ruutude täitmine. Kordamööda lisatakse ruutudesse 
+kas X või O sümbol ning võitjaks osutub see, kes saab esimesena 3 kujutist ritta.
 
-## Tähtaeg 07.05.2022 23:59
+Mängule on lisatud juurde ka seletus, mis teeb ka esmakordse kasutaja jaoks mängimise üli lihtsaks.
 
-Kujunda ja loo ise lihtne mäng. 
 
-## Nõuded
+Ekraanitõmmis mängust:
 
-1. Mäng töötab.
-1. Mäng on tehtud jQuery-ga. 
-1. Mäng on objektorienteeritud (klassides) ja kasutatud on AJAX-it. 
-1. Mäng on originaalne ning kasutajaliides on maitsekalt kujundatud kasutades CSS-i - peab olema ise kirjutatud. 
-1. Autori ees- ja perenimi on lehel välja toodud
-1. Lehel on viide rakenduse repositooriumile
-1. `README.md` failis on välja toodud autori nimi, ekraanipilt rakendusest ja kirjeldatud funktsionaalsus
-1. Kui kasutatud on koodi mujalt, siis sellel on viidatud. 
+![image](https://user-images.githubusercontent.com/90761238/172425327-39da7891-0622-419b-91f5-6018b51e9e32.png)
 
-## Mõned ideed (lihtsalt, et mõte hakkaks jooksma)
 
-* Ussimäng
-* Cookie clicker
-* Erinevad arvutamismängud
-* 2048
-**
-
-Võimalik saada - 25 punkti

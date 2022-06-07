@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=Ddevice-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./game.js"></script>
+<title>Tic-Tac-Toe Game</title>
+</head>
+<body>
+    <main class="background">
+        <section class="title">
+            <h3>Tic-Tac-Toe mängukene</h3>
+        </section>
+        <section class="display">
+            Mängija <span class="display-player playerX">X</span> alustab!
+            <br>
+            Mängimiseks kliki ruudu sisse, et märkida ära oma kastike. 
+            <br>
+            Võitmiseks pead saama kõrvuti kolm oma sümbolit(ülevalt alla, vasakult paremale või diagonaalis).
+        </section>
+        <section class="container">
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+        </section>
+        <section class="display announcer hide"></section>
+        <section class="controls">
+            <button id="reset">Reset</button>
+        </section>
+        <h3><a href="https://github.com/kpodra/2-kodutoo">Githubi repositoorium</a>| Autor: Kati Põdra</h3>
+
+        <br>
+
+        <div id="mid-area">
+            <h3>Feel free to send us feedback: </h3>
+            <label for="name">First name</label>
+            <input type="text" name="name" id="name" placeholder="Mari" required><br></br>
+            <label for="surname">Surname</label>
+            <input type="text" name="surname" id="surname" placeholder="Maasikas" required><br></br>
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" placeholder="marimari@gmail.com" required><br></br>
+            <label for="additional-info">More info</label>
+            <textarea name="additional-info" id="additional-info" cols="40" rows="5" placeholder="Write your feedback here..." required></textarea>
+            <button id="submit">Send</button>
+            <center>
+                <div id="submitConfirmation"></div>
+            </center>
+          </div>
+    </main> 
+
+    
+      
+</body>
+</html>
