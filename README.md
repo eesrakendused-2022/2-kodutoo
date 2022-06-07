@@ -1,5 +1,12 @@
-# 2-kodutoo
+Tegemist on lihtsalt klassikalise Trips-Traps-Trulli mänguga.
 
-Kodutöö loodud vaadates erinevaid Youtube'i õpetusi ning lugedes, kuidas js toimima peaks.
+Nagu ikka on mängu põhimõtteks kahe erineva osapoole (Player X ja Player O) vahel ruutude täitmine. Kordamööda lisatakse ruutudesse 
+kas X või O sümbol ning võitjaks osutub see, kes saab esimesena 3 kujutist ritta.
 
-Kõike toimima ei saanud(css ei toimi kahjuks, on ka varem sellega probleeme olnud), aga mingid põhiasjad peaksid töötama.
+Mängule on lisatud juurde ka seletus, mis teeb ka esmakordse kasutaja jaoks mängimise üli lihtsaks.
+
+
+Ekraanitõmmis mängust:
+
+image.png
+
