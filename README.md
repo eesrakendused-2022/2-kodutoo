@@ -8,5 +8,6 @@ Mängule on lisatud juurde ka seletus, mis teeb ka esmakordse kasutaja jaoks mä
 
 Ekraanitõmmis mängust:
 
-image.png
+![image](https://user-images.githubusercontent.com/90761238/172425327-39da7891-0622-419b-91f5-6018b51e9e32.png)
+
 
