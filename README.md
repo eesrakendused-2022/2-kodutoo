@@ -1,28 +1,19 @@
-# 2-kodutoo
-
-2. kodutöö Eesrakenduste arendamises.
-
-## Tähtaeg 07.05.2022 23:59
-
-Kujunda ja loo ise lihtne mäng. 
-
+# 2-kodutoo Laura Aruksaar
 ## Nõuded
-
 1. Mäng töötab.
-1. Mäng on tehtud jQuery-ga. 
-1. Mäng on objektorienteeritud (klassides) ja kasutatud on AJAX-it. 
-1. Mäng on originaalne ning kasutajaliides on maitsekalt kujundatud kasutades CSS-i - peab olema ise kirjutatud. 
-1. Autori ees- ja perenimi on lehel välja toodud
-1. Lehel on viide rakenduse repositooriumile
-1. `README.md` failis on välja toodud autori nimi, ekraanipilt rakendusest ja kirjeldatud funktsionaalsus
-1. Kui kasutatud on koodi mujalt, siis sellel on viidatud. 
+2. Mäng on tehtud jQuery-ga.
+3. Mäng on objektorienteeritud (klassides) ja kasutatud on AJAX-it.
+4. Mäng on originaalne ning kasutajaliides on maitsekalt kujundatud kasutades CSS-i - peab olema ise kirjutatud.
+5. Autori ees- ja perenimi on lehel välja toodud
+6. Lehel on viide rakenduse repositooriumile
+7. README.md failis on välja toodud autori nimi, ekraanipilt rakendusest ja kirjeldatud funktsionaalsus
+8. Kui kasutatud on koodi mujalt, siis sellel on viidatud.
 
-## Mõned ideed (lihtsalt, et mõte hakkaks jooksma)
+## Mängu kirjeldus (funktsionaalsus)
+Tegemist on sõnamänguga "poomine". Mängu eesmärk on arvata juhuslikult genereeritud sõna tähed. Kui arvad 6 korda valesti kaotad mängu. 
+ 
 
-* Ussimäng
-* Cookie clicker
-* Erinevad arvutamismängud
-* 2048
-**
+<img width="680" alt="image" src="https://user-images.githubusercontent.com/90316827/169722053-c7aed1fd-27c5-4b3b-b258-73518c4b713a.png">
+Link mängule: http://greeny.cs.tlu.ee/~lauaru/eesrakendused/proov2/
 
-Võimalik saada - 25 punkti
+Kasutasin ka koodi siit: https://codepen.io/jramos5/pen/oxPaJL
