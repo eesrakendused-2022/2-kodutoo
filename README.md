@@ -1,28 +1,41 @@
-# 2-kodutoo
+## Capture-the-king
 
-2. kodutöö Eesrakenduste arendamises.
+# Mis see on?
+1. Capture the king on agressiivsem ja intensiivsem variant klassikalisest lauamängust "male".
+2. Mängu eesmärk ei ole saavutada vastasele Šahh-matt, vaid selles versioonis on kuningas samuti söödav nupp.
+3. Mängu võidad süües vastase kuninga.
 
-## Tähtaeg 07.05.2022 23:59
+# Kuidas mängida?
+1. Nagu klassikalises males, on siin täpselt samasugused liikumised nuppudel.
+2. Vajuta nupule, selle peale avaneb sulle võimalikud käigud ja liigu vastavale ruudule
+3. *Note* vastase nuppu süües vajuta vastavale ruudule, mitte vastase nupule endile, kuna seda mängid tavaliselt 2 in ühe arvuti taga
 
-Kujunda ja loo ise lihtne mäng. 
+# Funktsioonid, klassid ja tehniline pool
+1. Mäng on loodud kasutades nii vanilla JavaScripti kui ka (enamjaolt) JQuery-t
+2. Mängides näed sa reaalajas palju nuppe oled sa vastaselt võtnud
+3. Võidu/kaotuse korral kuvatakse ka scoreboard, kuhu kuvatakse 3 viimast mängu (töötab ainult greeny versioonil, kuna lin2 omal pole php supporti)
+4. Mängu skoorid saadetakse tekstifaili db.txt kasutades AJAX-i põhimõtteid
+5. Lehel kuvatakse ka see, kelle kord on käia (juhul, kui meelest läks vms)
+6. Kasutusel on 3 klassi ja 1 funktsionaalne js fail. Klassid 1 ja 2 vastutavad liikumise/söömise/highlighti loogika eest. Klass 3 tegeleb puhtalt ainult AJAX-ga. Func js fail vastutab mängu üldise loogika eest, ehk kes millal käib, millal viiakse AJAX klassi info ja saadetakse andmebaasi, millal kuvatakse võit jne. 
 
-## Nõuded
+Mängu saab proovida siin: 
+http://www.tlu.ee/~krisplv/jQueryGame/
+või siin (vajalik greeny tunnel):
+http://greeny.cs.tlu.ee/~kripol/frontend/jQueryGame/
 
-1. Mäng töötab.
-1. Mäng on tehtud jQuery-ga. 
-1. Mäng on objektorienteeritud (klassides) ja kasutatud on AJAX-it. 
-1. Mäng on originaalne ning kasutajaliides on maitsekalt kujundatud kasutades CSS-i - peab olema ise kirjutatud. 
-1. Autori ees- ja perenimi on lehel välja toodud
-1. Lehel on viide rakenduse repositooriumile
-1. `README.md` failis on välja toodud autori nimi, ekraanipilt rakendusest ja kirjeldatud funktsionaalsus
-1. Kui kasutatud on koodi mujalt, siis sellel on viidatud. 
+# Pildid mängust
 
-## Mõned ideed (lihtsalt, et mõte hakkaks jooksma)
+Pilt coverist, mis on välja toodud mängu nimi, väike sissejuhatus ja võimalus sisestada mängijate nimed
+![lahe pilt](jQueryGame/pictures/front.png)
 
-* Ussimäng
-* Cookie clicker
-* Erinevad arvutamismängud
-* 2048
-**
+Pilt mängust endast.
+![lahe pilt](jQueryGame/pictures/mainGame.png)
 
-Võimalik saada - 25 punkti
+Pilt lipu liikumisest laual
+![lahe pilt](jQueryGame/pictures/queenMovement.png)
+
+Pilt, kus valge võitis.
+![lahe pilt](jQueryGame/pictures/whiteWin.png)
+
+Pilt autori nimest ja lingist gitHub reposse(click on logo)
+![lahe pilt](jQueryGame/pictures/Screenshot_1.png)
