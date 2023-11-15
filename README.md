@@ -1,12 +1,18 @@
-# 2-kodutoo
-## Clicker mäng - Star Forger
-Autor: Kevin Rosenberg
+# js-clickergame
+## Clicker game - Star Forger
+Author: Kevin Rosenberg
+Small project made as part of a school subject in 2022.
 
 ![image](https://user-images.githubusercontent.com/90192448/167265276-8cce45f1-b99d-4c8f-8a15-ea76e503e8a4.png)
 
-## Funktsionaalsus
-1. Klikkides vasakul pool olevale pöörlevale tähele loetakse tähe all klikkide arvu ehk skoori (valge number).
-2. Klikkides skoori all olevale 'Save Score' nupule salvestatakse skoor ära. Parimat skoori näidatakse lehel peale salvestamist mängu kohal kollase tekstina.
-3. Poes olevad esemed 'SUPERNOVA', 'CELESTIAL GLOW' ja 'SAMSUNG GALAXY' saab punktide eest osta (ostes punktid vähenevad) ja mängija saab vastavalt ühe kliki kohta 1, 10, 100 klikki juurde. 'SUPERNOVA' saab kokku osta 4 korda, 'CELESTIAL GLOW' ja 'SAMSUNG GALAXY' saab osta kokku osta 3 korda.
-4. Poes olevad esemed 'COSMIC INSIGHT', 'UNIVERSE SHAPER' ja 'NEIL DEGRASSE TYSON' klikivad automaatselt vastavalt 3, 5 ja 8 sekundi tagant andes 10, 100 ja 1000 punkti.
-5. Poe all olev 'CLICK HERE' link viib mu lemmik muusikavideo juurde YouTubes.
+## Functionality
+1. Clicking on the yellow star on the left side will count the users clicks/score under the star.
+2. Clicking on the button 'Save Score' the score will be saved in a local storage. The best score is shown at the top of the page after saving with yellow text
+3. The user can buy different powerups from the shop on the right side of the page. Buying a powerup subtracts from the score
+* 'SUPERNOVA' adds 1 click per click. Can be bought 4 times.
+* 'CELESATIAL GLOW' adds 10 clicks per click. Can be bought 3 times.
+* 'SAMSUNG GALAXY' adds 100 clicks per click. Can be bought 3 times.
+* 'COSMIC INSIGHT' automatically cliks every 3 seconds giving 10 points.
+* 'UNIVERSE SHAPER' automatically clicks every 5 seconds giving 100 points.
+* 'NEIL DEGRASSE TYSON' automatically clicks every 10 seconds giving 1000 points.
+4. The link under the shop 'CLICK HERE' leads to a music video on YouTube.
